@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deather Vector | Public Paper-Trading Record</title>
+    <meta name="description" content="Deather Vector runs three automated trading engines on paper accounts and publishes every trade, win or lose, each evening after the close.">
+    <meta property="og:title" content="Deather Vector - public paper-trading record">
+    <meta property="og:description" content="Three automated engines. Every trade published daily, losses included. Paper accounts, real market prices.">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <canvas class="market-field" id="marketField" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand-mark" href="#home" aria-label="Deather Vector home">
+        <span class="brand-glyph">DV</span>
+        <span>Deather Vector</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#results">Results</a>
+        <a href="#holdings">Holdings</a>
+        <a href="#trades">Trades</a>
+        <a href="#engines">Engines</a>
+        <a href="#rules">How we report</a>
+        <a href="#disclaimer">Disclaimer</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-band" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Public paper-trading record</p>
+          <h1>Deather Vector</h1>
+          <p class="positioning">Three automated trading engines. Every trade published, losses included.</p>
+          <p class="hero-note">
+            Deather Vector trades on Alpaca paper accounts: simulated money at real market prices. Each evening
+            after the close, the system's own trade records are published here unedited.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#results">See the results</a>
+            <a class="button secondary" href="#trades">Every trade</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Record status">
+          <div class="status-row">
+            <span>Accounts</span>
+            <strong class="paper-tag">PAPER</strong>
+          </div>
+          <div class="status-row">
+            <span>Record started</span>
+            <strong data-bind="record_start">-</strong>
+          </div>
+          <div class="status-row">
+            <span>Last update</span>
+            <strong data-bind="as_of">-</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-band surface" id="results">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Results</p>
+            <h2>All engines, all trades.</h2>
+            <p class="lead-note" data-bind="label">Paper accounts: simulated money, real market prices.</p>
+          </div>
+          <div class="notice" id="pendingNotice" hidden>
+            <strong>The public record starts <span data-bind="record_start">-</span>.</strong>
+            The first update is published after that day's close. Until then there is nothing to show, and nothing
+            here is a placeholder or a backtest.
+          </div>
+          <div class="notice warn" id="sampleNotice" hidden>
+            <strong>Sample data.</strong> These numbers are a layout preview, not results.
+          </div>
+          <ul class="notice-list" id="notes" hidden></ul>
+
+          <div class="total-board" id="totalBoard">
+            <article class="stat-card total">
+              <span class="stat-label">All engines - equity</span>
+              <p class="stat-value" data-stat="total.equity">-</p>
+              <p class="stat-sub"><span data-stat="total.pnl">-</span> <span data-stat="total.return_pct">-</span> since start</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">S&amp;P 500 (SPY), same period</span>
+              <p class="stat-value" data-stat="spy.return_pct">-</p>
+              <p class="stat-sub">Price change from the last close before the record started</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Closed trades</span>
+              <p class="stat-value" data-stat="total.trades_closed">-</p>
+              <p class="stat-sub"><span data-stat="total.win_rate_pct">-</span> winners - realized <span data-stat="total.realized_pnl">-</span></p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Worst drop from a high</span>
+              <p class="stat-value" data-stat="total.max_drawdown_pct">-</p>
+              <p class="stat-sub">Largest end-of-day decline from a previous peak</p>
+            </article>
+          </div>
+
+          <div class="chart-panel">
+            <div class="chart-head">
+              <h3>Return since the record started</h3>
+              <div class="legend" id="chartLegend"></div>
+            </div>
+            <div class="chart" id="equityChart" role="img" aria-label="Return since the record started, by engine, versus SPY"></div>
+          </div>
+
+          <div class="engine-grid" id="engineGrid"></div>
+
+          <details class="table-panel" id="dailyPanel">
+            <summary>Day by day</summary>
+            <div class="table-scroll"><table id="dailyTable"></table></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="section-band" id="holdings">
+        <div class="section-shell">
+          <div class="section-heading compact">
+            <p class="eyebrow">Holdings</p>
+            <h2>What the engines hold at the close.</h2>
+            <p>Positions open after the last session, valued at that day's closing price.</p>
+          </div>
+          <div class="table-scroll"><table id="holdingsTable"></table></div>
+        </div>
+      </section>
+
+      <section class="section-band surface" id="trades">
+        <div class="section-shell">
+          <div class="section-heading compact">
+            <p class="eyebrow">Trade ledger</p>
+            <h2>Every trade since the start.</h2>
+            <p>Newest first. Prices are the actual paper fills. Profit and loss is before any taxes; paper accounts charge no commission.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter trades">
+            <button type="button" class="chip active" data-filter="ALL">All</button>
+            <button type="button" class="chip" data-filter="SCALPER">Scalper</button>
+            <button type="button" class="chip" data-filter="QUANT">Quant</button>
+            <button type="button" class="chip" data-filter="LONGTERM">Longterm</button>
+            <button type="button" class="chip" data-filter="OPEN">Open</button>
+          </div>
+          <div class="table-scroll tall"><table id="tradesTable"></table></div>
+          <p class="table-foot" id="tradesFoot"></p>
+        </div>
+      </section>
+
+      <section class="section-band" id="engines">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">The engines</p>
+            <h2>Three styles, three separate accounts.</h2>
+            <p>Each engine trades its own paper account with its own daily loss limit. No human picks the trades.</p>
+          </div>
+          <div class="feature-grid three">
+            <article class="feature-card">
+              <span class="feature-index">Scalper</span>
+              <h3>Minutes to hours</h3>
+              <p>Intraday trades in the day's strongest-moving stocks, with automated exits. Flat by the end of every session.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">Quant</span>
+              <h3>Monthly</h3>
+              <p>A momentum portfolio of US stocks, rebalanced at the start of each month at the opening auction.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">Longterm</span>
+              <h3>Quarterly</h3>
+              <p>Half an S&amp;P 500 index fund, half 25 large companies ranked on quality and value. Rebalanced each quarter. First buys December 1, 2026.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band surface" id="rules">
+        <div class="section-shell">
+          <div class="section-heading compact">
+            <p class="eyebrow">How we report</p>
+            <h2>The rules for this page.</h2>
+          </div>
+          <ol class="rules">
+            <li><strong>Everything is shown.</strong> Every trade from the first day, winners and losers. Nothing is removed or re-run.</li>
+            <li><strong>Straight from the system.</strong> Numbers come from the trading system's own fill records and the broker's reported account values, once a day after the close.</li>
+            <li><strong>Dated and public.</strong> Each daily update is a dated commit in a public repository, so earlier days can't be quietly edited.</li>
+            <li><strong>Paper, said plainly.</strong> These are paper accounts: simulated money at real market prices. Real-money results can differ, for example in fills on fast-moving stocks.</li>
+            <li><strong>Compared with the market.</strong> Results sit next to the S&amp;P 500 (SPY) over the same period.</li>
+          </ol>
+          <p class="method-note" id="repoLink"></p>
+        </div>
+      </section>
+
+      <section class="section-band" id="disclaimer">
+        <div class="section-shell">
+          <div class="disclaimer-panel">
+            <div>
+              <p class="eyebrow">Disclaimer</p>
+              <h2>A public record, not advice.</h2>
+            </div>
+            <ul>
+              <li>Deather Vector publishes the results of its own paper-trading accounts for information only.</li>
+              <li>Nothing on this site is financial advice or a recommendation to buy or sell any security.</li>
+              <li>Paper trading uses simulated money; it is not live-money performance.</li>
+              <li>Trades are published after the close, never in advance. There are no alerts or signals.</li>
+              <li>Past results do not guarantee future results.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span id="year">2026</span> Deather Vector</span>
+      <span data-bind="generated">-</span>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
