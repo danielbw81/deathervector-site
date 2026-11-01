@@ -111,17 +111,12 @@
 
   function render() {
     context.clearRect(0, 0, width, height);
-    drawGrid();
-    drawBars();
-    drawMarketPath();
+    drawGrid();          // grid only: no decorative price lines or bars that could be read as results
 
-    tick += 0.008;
-    if (!motionQuery.matches) {
-      frameId = window.requestAnimationFrame(render);
-    }
+    // static: drawn once and on resize
   }
 
-  window.addEventListener("resize", resize, { passive: true });
+  window.addEventListener("resize", () => { resize(); render(); }, { passive: true });
   resize();
   render();
 
