@@ -143,6 +143,12 @@
           </div>
           <div class="table-scroll tall"><table id="tradesTable"></table></div>
           <p class="table-foot" id="tradesFoot"></p>
+          <details class="table-panel before-panel" id="beforePanel" hidden>
+            <summary id="beforeSummary">Before the record started</summary>
+            <p class="table-foot">Test trades on the same paper accounts before the public record began. They are not in the
+              numbers above; each engine's starting balance is the broker's balance after them.</p>
+            <div class="table-scroll"><table id="beforeTable"></table></div>
+          </details>
         </div>
       </section>
 
@@ -180,7 +186,7 @@
             <h2>The rules for this page.</h2>
           </div>
           <ol class="rules">
-            <li><strong>Everything is shown.</strong> Every trade from the first day, winners and losers. Nothing is removed or re-run.</li>
+            <li><strong>Everything is shown.</strong> Every trade from the first day, winners and losers. Nothing is removed or re-run. Test trades made before the record started are listed separately under the ledger.</li>
             <li><strong>Straight from the system.</strong> Numbers come from the trading system's own fill records and the broker's reported account values, once a day after the close.</li>
             <li><strong>Dated and public.</strong> Each daily update is a dated commit in a public repository, so earlier days can't be quietly edited.</li>
             <li><strong>Paper, said plainly.</strong> These are paper accounts: simulated money at real market prices. Real-money results can differ, for example in fills on fast-moving stocks.</li>
