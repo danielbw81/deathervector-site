@@ -210,7 +210,8 @@
       price(h.close), money(h.market_value), [money(h.unrealized_pnl, true), tone(h.unrealized_pnl)],
       [pct(h.unrealized_pct), tone(h.unrealized_pct)], dateLabel(h.opened_date)]);
     table("#holdingsTable", [["Engine"], ["Symbol", "l"], ["Shares"], ["Avg cost"], ["Close"], ["Value"], ["Unrealized"], ["%"], ["Since"]],
-      rows, "No open positions at the last close.");
+      rows, data.status === "PENDING" ? "No holdings published yet. The first snapshot comes after the first published close."
+        : "No open positions at the last close.");
   }
 
   function trades() {
@@ -228,6 +229,20 @@
       more.addEventListener("click", () => { shown += PAGE; trades(); });
       foot.append(more);
     }
+  }
+
+  function beforeRecord() {
+    const panel = $("#beforePanel");
+    const b = data.before_record;
+    if (!b || !b.count) { panel.hidden = true; return; }
+    panel.hidden = false;
+    const span = b.first_date === b.last_date ? dateLabel(b.first_date) : dateLabel(b.first_date) + " - " + dateLabel(b.last_date);
+    $("#beforeSummary").textContent = `Before the record started: ${b.count} test trade${b.count === 1 ? "" : "s"} (${span}), net ${money(b.realized_pnl, true)}`;
+    const rows = b.trades.map((t) => [badge(t.engine), [t.symbol, "l"], timeET(t.opened_utc), String(t.qty), price(t.avg_entry),
+      t.status === "OPEN" ? ["Open", "l"] : [timeET(t.closed_utc), "l"], price(t.avg_exit),
+      [t.sold_qty ? money(t.realized_pnl, true) : "-", tone(t.realized_pnl)], [t.sold_qty ? pct(t.return_pct) : "-", tone(t.return_pct)]]);
+    table("#beforeTable", [["Engine"], ["Symbol", "l"], ["Bought"], ["Shares"], ["Entry"], ["Sold", "l"], ["Exit"], ["P&L"], ["%"]],
+      rows, "");
   }
 
   function notices() {
@@ -255,6 +270,7 @@
     daily();
     holdings();
     trades();
+    beforeRecord();
   }
 
   let resizeTimer = 0;
