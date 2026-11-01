@@ -1,0 +1,7 @@
+{
+ "schema": "deathervector.results.v1",
+ "status": "PENDING",
+ "account_type": "PAPER",
+ "label": "Alpaca paper trading accounts - simulated money, real market prices. Not live trading.",
+ "record_start": "2026-11-02"
+}
