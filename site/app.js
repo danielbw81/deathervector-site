@@ -286,6 +286,33 @@
     trades();
   }));
 
+  function events(list) {
+    const panel = $("#eventsPanel");
+    const items = (Array.isArray(list) ? list : []).filter((e) => e && typeof e.date === "string" && typeof e.text === "string")
+      .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+    panel.hidden = !items.length;
+    if (!items.length) return;
+    const ol = $("#eventsList");
+    const more = $("#eventsMore");
+    const draw = (n) => {
+      ol.textContent = "";
+      items.slice(0, n).forEach((e) => {
+        const head = el("p", { class: "event-head" }, [el("time", { datetime: e.date, text: dateLabel(e.date) })]);
+        (Array.isArray(e.engines) ? e.engines : []).forEach((g) => { if (NAMES[g]) head.append(badge(g)); });
+        if (typeof e.title === "string" && e.title) head.append(el("strong", { text: e.title }));
+        ol.append(el("li", { class: "event" }, [head, el("p", { class: "event-text", text: e.text })]));
+      });
+      more.hidden = items.length <= n;
+    };
+    draw(5);
+    more.addEventListener("click", () => draw(items.length));
+  }
+
+  fetch("./data/events.json", { cache: "no-store" })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((json) => events(json && json.events))
+    .catch(() => events([]));
+
   fetch("./data/results.json", { cache: "no-store" })
     .then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
     .then((json) => { data = json; render(); })
