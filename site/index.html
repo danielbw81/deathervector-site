@@ -24,6 +24,7 @@
         <a href="#trades">Trades</a>
         <a href="#engines">Engines</a>
         <a href="#rules">How we report</a>
+        <a href="#follow">Follow</a>
         <a href="#disclaimer">Disclaimer</a>
       </nav>
     </header>
@@ -41,6 +42,7 @@
           <div class="hero-actions">
             <a class="button primary" href="#results">See the results</a>
             <a class="button secondary" href="#trades">Every trade</a>
+            <a class="button secondary" href="#follow">Get updates</a>
           </div>
         </div>
         <aside class="hero-panel" aria-label="Record status">
@@ -108,6 +110,15 @@
           </div>
 
           <div class="engine-grid" id="engineGrid"></div>
+
+          <section class="events-panel" id="eventsPanel" aria-labelledby="eventsTitle" hidden>
+            <div class="events-head">
+              <h3 id="eventsTitle">Events</h3>
+              <p>What happened and what was done about it, in plain words. Each entry is a dated public commit.</p>
+            </div>
+            <ol class="events" id="eventsList"></ol>
+            <button type="button" class="chip events-more" id="eventsMore" hidden>Show all events</button>
+          </section>
 
           <details class="table-panel" id="dailyPanel">
             <summary>Day by day</summary>
@@ -190,13 +201,29 @@
             <li><strong>Straight from the system.</strong> Numbers come from the trading system's own fill records and the broker's reported account values, once a day after the close.</li>
             <li><strong>Dated and public.</strong> Each daily update is a dated commit in a public repository, so earlier days can't be quietly edited.</li>
             <li><strong>Paper, said plainly.</strong> These are paper accounts: simulated money at real market prices. Real-money results can differ, for example in fills on fast-moving stocks.</li>
+            <li><strong>Events explained.</strong> When something goes wrong or a rule changes, a dated entry under Results says what happened and what was done.</li>
             <li><strong>Compared with the market.</strong> Results sit next to the S&amp;P 500 (SPY) over the same period.</li>
           </ol>
           <p class="method-note" id="repoLink"></p>
         </div>
       </section>
 
-      <section class="section-band" id="disclaimer">
+      <section class="section-band" id="follow">
+        <div class="section-shell">
+          <div class="follow-panel">
+            <div>
+              <p class="eyebrow">Follow along</p>
+              <h2>Get the build notes by email.</h2>
+              <p>Monthly recaps of the record, plus notes on how the system is built and tested. Sent through Substack.
+                No trade alerts. Unsubscribe anytime.</p>
+              <p class="method-note">If the form doesn't load, <a href="https://deathervector.substack.com/subscribe" rel="noopener">subscribe on Substack</a>.</p>
+            </div>
+            <iframe class="follow-embed" src="https://deathervector.substack.com/embed" title="Subscribe to Deather Vector by email" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band surface" id="disclaimer">
         <div class="section-shell">
           <div class="disclaimer-panel">
             <div>
