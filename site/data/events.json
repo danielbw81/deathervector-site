@@ -1,4 +1,13 @@
 {
  "schema": "deathervector.events.v1",
- "events": []
+ "events": [
+  {
+   "date": "2026-11-02",
+   "engines": [
+    "QUANT"
+   ],
+   "title": "Most of Quant's opening buys didn't fill",
+   "text": "Quant's monthly rebalance sent 209 buy orders into the Nov 2 opening auction, and only 16 filled. Paper-trading fills don't always behave like real-market fills, and most of these opening-auction orders came back unfilled. All 193 missed buys were re-sent for the Nov 3 open. From now on, any Quant or Longterm buy the opening auction misses is bought once at market right after the open (9:30-10:30 ET), with every risk limit still applied."
+  }
+ ]
 }
