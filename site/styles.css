@@ -962,7 +962,7 @@ td.empty-row {
   }
 }
 
-/* ---------------- Follow (email via Substack) ---------------- */
+/* ---------------- Follow (email signup, stored by Deather Vector) ---------------- */
 .follow-panel {
   display: grid;
   gap: 24px;
@@ -1061,4 +1061,113 @@ td.empty-row {
 
 .events-more {
   margin-top: 12px;
+}
+
+/* ---------------- Own signup form ---------------- */
+.follow-form {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.follow-form label {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.follow-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.follow-row input {
+  flex: 1 1 220px;
+  min-width: 0;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 14px;
+  background: var(--bg-2);
+  color: var(--text);
+  font: inherit;
+}
+
+.follow-row input:focus {
+  outline: 2px solid var(--cyan);
+  outline-offset: 1px;
+}
+
+.follow-row .button {
+  flex: 0 0 auto;
+  cursor: pointer;
+  border: 0;
+  font: inherit;
+}
+
+.follow-row .button[disabled] {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.follow-status {
+  min-height: 1.4em;
+  margin: 0;
+}
+
+.follow-status.ok {
+  color: var(--cyan) !important;
+}
+
+.follow-status.err {
+  color: var(--amber) !important;
+}
+
+.follow-panel .follow-privacy {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* ---------------- Story page ---------------- */
+.story {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(28px, 6vw, 72px) 20px 64px;
+}
+
+.story h1 {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.story .story-meta {
+  color: var(--muted);
+  margin: 0 0 32px;
+}
+
+.story p,
+.story li {
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.story a {
+  color: var(--cyan);
+}
+
+.story hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 32px 0;
 }
