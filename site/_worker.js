@@ -109,10 +109,11 @@ function csvCell(v) {
 }
 
 async function exportGet({ request, env }) {
-  const token = env.EXPORT_TOKEN;
+  const tokenKey = Object.keys(env || {}).find((k) => k.trim() === "EXPORT_TOKEN");
+  const token = tokenKey ? String(env[tokenKey]).trim() : "";
   if (!token || token.length < 24 || !env.SUBSCRIBERS) return notFound();
   const auth = request.headers.get("authorization") || "";
-  const given = auth.startsWith("Bearer ") ? auth.slice(7) : "";
+  const given = auth.startsWith("Bearer ") ? auth.slice(7).trim() : "";
   if (!given || !(await sameToken(given, token))) return notFound();
 
   const rows = ["email,subscribed_utc,source"];
