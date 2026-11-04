@@ -27,7 +27,7 @@ function reply(request, ok, error, status) {
 }
 
 async function subscribeGet({ env }) {
-  if (!env.SUBSCRIBERS) return json({ ok: false, error: "storage_not_bound", bound: Object.keys(env || {}).sort() }, 503);
+  if (!env.SUBSCRIBERS) return json({ ok: false, error: "storage_not_bound" }, 503);
   try {
     await env.SUBSCRIBERS.get("health");
     return json({ ok: true });
@@ -145,8 +145,16 @@ function harden(res) {
   return out;
 }
 
+// Find the KV binding even if its name was saved with stray spaces in the dashboard.
+function withStore(env) {
+  if (env && env.SUBSCRIBERS) return env;
+  const key = Object.keys(env || {}).find((k) => k.trim() === "SUBSCRIBERS");
+  return key ? Object.assign({}, env, { SUBSCRIBERS: env[key] }) : env;
+}
+
 export default {
-  async fetch(request, env) {
+  async fetch(request, rawEnv) {
+    const env = withStore(rawEnv);
     const path = new URL(request.url).pathname.replace(/\/+$/, "");
     const method = request.method;
     let res;
