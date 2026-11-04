@@ -27,7 +27,7 @@ function reply(request, ok, error, status) {
 }
 
 async function subscribeGet({ env }) {
-  if (!env.SUBSCRIBERS) return json({ ok: false, error: "storage_not_bound" }, 503);
+  if (!env.SUBSCRIBERS) return json({ ok: false, error: "storage_not_bound", bound: Object.keys(env || {}).sort() }, 503);
   try {
     await env.SUBSCRIBERS.get("health");
     return json({ ok: true });
