@@ -25,7 +25,7 @@
         <a href="#engines">Engines</a>
         <a href="#rules">How we report</a>
         <a href="#follow">Follow</a>
-        <a href="https://deathervector.substack.com/p/i-knew-how-to-build-a-house-i-had" rel="noopener">Why I built this</a>
+        <a href="./story.html">Why I built this</a>
         <a href="#disclaimer">Disclaimer</a>
       </nav>
     </header>
@@ -215,12 +215,20 @@
             <div>
               <p class="eyebrow">Follow along</p>
               <h2>Get the build notes by email.</h2>
-              <p>Monthly recaps of the record, plus notes on how the system is built and tested. Sent through Substack.
+              <p>Monthly recaps of the record, plus notes on how the system is built and tested.
                 No trade alerts. Unsubscribe anytime.</p>
-              <p class="method-note"><a href="https://deathervector.substack.com/p/i-knew-how-to-build-a-house-i-had" rel="noopener">Why I built this</a>: the story behind Deather Vector, on Substack.</p>
-              <p class="method-note">If the form doesn't load, <a href="https://deathervector.substack.com/subscribe" rel="noopener">subscribe on Substack</a>.</p>
+              <p class="method-note"><a href="./story.html">Why I built this</a>: the story behind Deather Vector.</p>
             </div>
-            <iframe class="follow-embed" src="https://deathervector.substack.com/embed" title="Subscribe to Deather Vector by email" loading="lazy"></iframe>
+            <form class="follow-form" id="followForm" action="/api/subscribe" method="post" novalidate>
+              <label for="followEmail">Email address</label>
+              <div class="follow-row">
+                <input id="followEmail" name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" placeholder="you@example.com">
+                <button type="submit" class="button primary" id="followButton">Subscribe</button>
+              </div>
+              <div class="hp" aria-hidden="true"><label for="followWebsite">Leave this empty</label><input id="followWebsite" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+              <p class="follow-status" id="followStatus" role="status" aria-live="polite"></p>
+              <p class="follow-privacy">Your email is used only to send Deather Vector updates. It is never sold or shared, and every email has an unsubscribe link.</p>
+            </form>
           </div>
         </div>
       </section>
@@ -251,5 +259,6 @@
 
     <script src="./script.js"></script>
     <script src="./app.js"></script>
+    <script src="./follow.js"></script>
   </body>
 </html>
