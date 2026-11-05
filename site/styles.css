@@ -1171,3 +1171,9 @@ td.empty-row {
   border-top: 1px solid var(--line);
   margin: 32px 0;
 }
+
+/* ---------------- Long tables: about 10 rows visible, scroll inside ---------------- */
+.table-scroll.rows10 {
+  max-height: 452px; /* header (~36px) + 10 rows (~41px each) */
+  overflow-y: auto;
+}
