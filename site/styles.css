@@ -1177,3 +1177,69 @@ td.empty-row {
   max-height: 452px; /* header (~36px) + 10 rows (~41px each) */
   overflow-y: auto;
 }
+
+/* ---------------- How it works: five minds ---------------- */
+.minds {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px 56px;
+}
+
+.minds-figure {
+  flex: 1 1 380px;
+  max-width: 600px;
+}
+
+.minds-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.minds-list {
+  flex: 1 1 320px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.mind {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.mind-dot {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 12px var(--c);
+}
+
+.mind-name {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.86rem;
+}
+
+.mind-name span {
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--subtle);
+}
+
+.mind-text {
+  margin: 4px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
