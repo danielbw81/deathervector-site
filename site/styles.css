@@ -1218,8 +1218,8 @@ td.empty-row {
   height: 12px;
   margin-top: 6px;
   border-radius: 50%;
-  background: var(--c);
-  box-shadow: 0 0 12px var(--c);
+  background: var(--c, #5fd4e6);
+  box-shadow: 0 0 12px var(--c, #5fd4e6);
 }
 
 .mind-name {
@@ -1243,3 +1243,9 @@ td.empty-row {
   color: var(--muted);
   line-height: 1.5;
 }
+
+.mind-dot--r { --c: #31e7b6; }
+.mind-dot--o { --c: #9b7bff; }
+.mind-dot--w { --c: #ff3da8; }
+.mind-dot--i { --c: #00d9ff; }
+.mind-dot--s { --c: #f5c542; }
