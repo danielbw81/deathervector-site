@@ -47,3 +47,13 @@
     }
   });
 })();
+
+// Pause the "How it works" animation for visitors who ask for reduced motion.
+(() => {
+  try {
+    const svg = document.querySelector(".minds-svg");
+    if (svg && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches && svg.pauseAnimations) {
+      svg.pauseAnimations();
+    }
+  } catch (e) { /* motion preference is a nicety only */ }
+})();
