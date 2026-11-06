@@ -10,3 +10,9 @@
 
 /api/*
   Cache-Control: no-store
+
+/*.css
+  Cache-Control: no-cache
+
+/*.js
+  Cache-Control: no-cache
