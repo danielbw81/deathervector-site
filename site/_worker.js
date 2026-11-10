@@ -132,6 +132,38 @@ async function exportGet({ request, env }) {
   });
 }
 
+// Owner-only subscriber COUNT (no addresses). Its key is derived from EXPORT_TOKEN:
+// hex(SHA-256("dv-count-v1:" + EXPORT_TOKEN)), so it can be shared with a monitor
+// without exposing the export password. Wrong or missing key looks like a 404.
+async function hexSha256(s) {
+  const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return Array.from(new Uint8Array(d), (b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+async function countGet({ request, env }) {
+  const tokenKey = Object.keys(env || {}).find((k) => k.trim() === "EXPORT_TOKEN");
+  const token = tokenKey ? String(env[tokenKey]).trim() : "";
+  if (!token || token.length < 24 || !env.SUBSCRIBERS) return notFound();
+  const auth = request.headers.get("authorization") || "";
+  const given = auth.startsWith("Bearer ") ? auth.slice(7).trim() : "";
+  const want = await hexSha256("dv-count-v1:" + token);
+  if (!given || !(await sameToken(given, want))) return notFound();
+
+  let count = 0;
+  let last = "";
+  let cursor;
+  do {
+    const page = await env.SUBSCRIBERS.list({ prefix: "sub:", cursor });
+    for (const k of page.keys) {
+      count++;
+      const t = (k.metadata && k.metadata.t) || "";
+      if (t > last) last = t;
+    }
+    cursor = page.list_complete ? undefined : page.cursor;
+  } while (cursor);
+  return json({ ok: true, count, last_signup_utc: last || null });
+}
+
 const SECURITY = {
   "x-content-type-options": "nosniff",
   "referrer-policy": "strict-origin-when-cross-origin",
@@ -162,6 +194,7 @@ export default {
     if (path === "/api/subscribe" && method === "GET") res = await subscribeGet({ request, env });
     else if (path === "/api/subscribe" && method === "POST") res = await subscribePost({ request, env });
     else if (path === "/api/export" && method === "GET") res = await exportGet({ request, env });
+    else if (path === "/api/count" && method === "GET") res = await countGet({ request, env });
     else if (path.startsWith("/api")) res = json({ ok: false, error: "not_found" }, 404);
     else return env.ASSETS.fetch(request);
     // Redirects (no-JS form fallback) keep their Location header; harden() copies it.
