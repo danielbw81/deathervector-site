@@ -145,7 +145,10 @@ async function countGet({ request, env }) {
   const token = tokenKey ? String(env[tokenKey]).trim() : "";
   if (!token || token.length < 24 || !env.SUBSCRIBERS) return notFound();
   const auth = request.headers.get("authorization") || "";
-  const given = auth.startsWith("Bearer ") ? auth.slice(7).trim() : "";
+  // The daily monitor can only fetch plain URLs, so the count key may also come as ?k=.
+  const given = auth.startsWith("Bearer ")
+    ? auth.slice(7).trim()
+    : (new URL(request.url).searchParams.get("k") || "").trim();
   const want = await hexSha256("dv-count-v1:" + token);
   if (!given || !(await sameToken(given, want))) return notFound();
 
