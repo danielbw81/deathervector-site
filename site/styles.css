@@ -86,6 +86,18 @@ a {
   font-size: 0.78rem;
 }
 
+.brand-logo {
+  display: block;
+  width: 54px;
+  height: 46px;
+  filter: drop-shadow(0 0 6px rgba(57, 208, 216, 0.35));
+  transition: transform 0.2s ease;
+}
+
+.brand-mark:hover .brand-logo {
+  transform: scale(1.06);
+}
+
 .site-nav {
   display: none;
   align-items: center;
