@@ -4,51 +4,51 @@
  "account_type": "PAPER",
  "repository_url": "https://github.com/danielbw81/deathervector-site",
  "label": "Alpaca paper trading accounts - simulated money, real market prices. Not live trading.",
- "generated_utc": "2026-11-12T01:20:00Z",
- "as_of_date": "2026-11-11",
+ "generated_utc": "2026-11-13T01:20:00Z",
+ "as_of_date": "2026-11-12",
  "record_start": "2026-11-02",
  "baseline_date": "2026-11-02",
  "total": {
   "start_equity": 149970.71,
-  "equity": 147930.43,
-  "pnl": -2040.28,
-  "return_pct": -1.36,
+  "equity": 147348.42,
+  "pnl": -2622.29,
+  "return_pct": -1.749,
   "max_drawdown_pct": -3.585,
-  "trades_closed": 11,
+  "trades_closed": 13,
   "trades_open": 209,
   "wins": 3,
-  "losses": 8,
-  "win_rate_pct": 27.3,
-  "realized_pnl": -1275.03,
+  "losses": 10,
+  "win_rate_pct": 23.1,
+  "realized_pnl": -1912.81,
   "avg_win": 882.55,
-  "avg_loss": -490.34,
-  "profit_factor": 0.67,
+  "avg_loss": -456.05,
+  "profit_factor": 0.58,
   "best": 1928.57,
   "worst": -838.15
  },
  "spy": {
-  "return_pct": 0.541,
+  "return_pct": 0.185,
   "base_close": 755.72,
-  "close": 759.81
+  "close": 757.12
  },
  "engines": [
   {
    "engine": "SCALPER",
    "name": "Scalper",
    "start_equity": 49970.71,
-   "equity": 48691.57,
-   "pnl": -1279.14,
-   "return_pct": -2.56,
+   "equity": 48053.58,
+   "pnl": -1917.13,
+   "return_pct": -3.837,
    "max_drawdown_pct": -5.602,
-   "trades_closed": 11,
+   "trades_closed": 13,
    "trades_open": 0,
    "wins": 3,
-   "losses": 8,
-   "win_rate_pct": 27.3,
-   "realized_pnl": -1275.03,
+   "losses": 10,
+   "win_rate_pct": 23.1,
+   "realized_pnl": -1912.81,
    "avg_win": 882.55,
-   "avg_loss": -490.34,
-   "profit_factor": 0.67,
+   "avg_loss": -456.05,
+   "profit_factor": 0.58,
    "best": 1928.57,
    "worst": -838.15
   },
@@ -56,9 +56,9 @@
    "engine": "QUANT",
    "name": "Quant",
    "start_equity": 50000.0,
-   "equity": 49238.86,
-   "pnl": -761.14,
-   "return_pct": -1.522,
+   "equity": 49294.84,
+   "pnl": -705.16,
+   "return_pct": -1.41,
    "max_drawdown_pct": -6.609,
    "trades_closed": 0,
    "trades_open": 209,
@@ -253,6 +253,26 @@
    },
    "total_equity": 147930.43,
    "spy_return_pct": 0.541
+  },
+  {
+   "date": "2026-11-12",
+   "equity": {
+    "SCALPER": 48053.58,
+    "QUANT": 49294.84,
+    "LONGTERM": 50000.0
+   },
+   "day_pnl": {
+    "SCALPER": -637.77,
+    "QUANT": -173.61,
+    "LONGTERM": 0.0
+   },
+   "closed_trades": {
+    "SCALPER": 2,
+    "QUANT": 0,
+    "LONGTERM": 0
+   },
+   "total_equity": 147348.42,
+   "spy_return_pct": 0.185
   }
  ],
  "holdings": [
@@ -262,10 +282,10 @@
    "qty": 1,
    "avg_cost": 1106.21,
    "opened_date": "2026-11-03",
-   "close": 977.69,
-   "market_value": 977.69,
-   "unrealized_pnl": -128.52,
-   "unrealized_pct": -11.618
+   "close": 937.46,
+   "market_value": 937.46,
+   "unrealized_pnl": -168.75,
+   "unrealized_pct": -15.255
   },
   {
    "engine": "QUANT",
@@ -273,10 +293,10 @@
    "qty": 1,
    "avg_cost": 887.57,
    "opened_date": "2026-11-02",
-   "close": 811.3,
-   "market_value": 811.3,
-   "unrealized_pnl": -76.27,
-   "unrealized_pct": -8.593
+   "close": 798.44,
+   "market_value": 798.44,
+   "unrealized_pnl": -89.13,
+   "unrealized_pct": -10.042
   },
   {
    "engine": "QUANT",
@@ -284,10 +304,10 @@
    "qty": 1,
    "avg_cost": 687.49,
    "opened_date": "2026-11-03",
-   "close": 648.06,
-   "market_value": 648.06,
-   "unrealized_pnl": -39.43,
-   "unrealized_pct": -5.735
+   "close": 624.65,
+   "market_value": 624.65,
+   "unrealized_pnl": -62.84,
+   "unrealized_pct": -9.14
   },
   {
    "engine": "QUANT",
@@ -295,10 +315,10 @@
    "qty": 1,
    "avg_cost": 477.01,
    "opened_date": "2026-11-03",
-   "close": 552.9,
-   "market_value": 552.9,
-   "unrealized_pnl": 75.89,
-   "unrealized_pct": 15.91
+   "close": 585.3,
+   "market_value": 585.3,
+   "unrealized_pnl": 108.29,
+   "unrealized_pct": 22.702
   },
   {
    "engine": "QUANT",
@@ -306,10 +326,10 @@
    "qty": 1,
    "avg_cost": 622.75,
    "opened_date": "2026-11-03",
-   "close": 551.72,
-   "market_value": 551.72,
-   "unrealized_pnl": -71.03,
-   "unrealized_pct": -11.406
+   "close": 545.14,
+   "market_value": 545.14,
+   "unrealized_pnl": -77.61,
+   "unrealized_pct": -12.462
   },
   {
    "engine": "QUANT",
@@ -317,10 +337,10 @@
    "qty": 1,
    "avg_cost": 449.14,
    "opened_date": "2026-11-03",
-   "close": 472.56,
-   "market_value": 472.56,
-   "unrealized_pnl": 23.42,
-   "unrealized_pct": 5.214
+   "close": 470.55,
+   "market_value": 470.55,
+   "unrealized_pnl": 21.41,
+   "unrealized_pct": 4.767
   },
   {
    "engine": "QUANT",
@@ -328,10 +348,10 @@
    "qty": 1,
    "avg_cost": 428.9,
    "opened_date": "2026-11-03",
-   "close": 402.84,
-   "market_value": 402.84,
-   "unrealized_pnl": -26.06,
-   "unrealized_pct": -6.076
+   "close": 412.85,
+   "market_value": 412.85,
+   "unrealized_pnl": -16.05,
+   "unrealized_pct": -3.742
   },
   {
    "engine": "QUANT",
@@ -339,21 +359,10 @@
    "qty": 1,
    "avg_cost": 386.86,
    "opened_date": "2026-11-03",
-   "close": 395.08,
-   "market_value": 395.08,
-   "unrealized_pnl": 8.22,
-   "unrealized_pct": 2.125
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "DELL",
-   "qty": 1,
-   "avg_cost": 408.0,
-   "opened_date": "2026-11-03",
-   "close": 373.68,
-   "market_value": 373.68,
-   "unrealized_pnl": -34.32,
-   "unrealized_pct": -8.412
+   "close": 380.95,
+   "market_value": 380.95,
+   "unrealized_pnl": -5.91,
+   "unrealized_pct": -1.528
   },
   {
    "engine": "QUANT",
@@ -361,10 +370,21 @@
    "qty": 1,
    "avg_cost": 384.16,
    "opened_date": "2026-11-03",
-   "close": 363.71,
-   "market_value": 363.71,
-   "unrealized_pnl": -20.45,
-   "unrealized_pct": -5.323
+   "close": 374.95,
+   "market_value": 374.95,
+   "unrealized_pnl": -9.21,
+   "unrealized_pct": -2.397
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "DELL",
+   "qty": 1,
+   "avg_cost": 408.0,
+   "opened_date": "2026-11-03",
+   "close": 371.17,
+   "market_value": 371.17,
+   "unrealized_pnl": -36.83,
+   "unrealized_pct": -9.027
   },
   {
    "engine": "QUANT",
@@ -372,21 +392,10 @@
    "qty": 1,
    "avg_cost": 370.7,
    "opened_date": "2026-11-03",
-   "close": 347.95,
-   "market_value": 347.95,
-   "unrealized_pnl": -22.75,
-   "unrealized_pct": -6.137
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "PANW",
-   "qty": 1,
-   "avg_cost": 359.12,
-   "opened_date": "2026-11-03",
-   "close": 334.47,
-   "market_value": 334.47,
-   "unrealized_pnl": -24.65,
-   "unrealized_pct": -6.864
+   "close": 342.74,
+   "market_value": 342.74,
+   "unrealized_pnl": -27.96,
+   "unrealized_pct": -7.542
   },
   {
    "engine": "QUANT",
@@ -394,21 +403,21 @@
    "qty": 1,
    "avg_cost": 396.14,
    "opened_date": "2026-11-03",
-   "close": 319.82,
-   "market_value": 319.82,
-   "unrealized_pnl": -76.32,
-   "unrealized_pct": -19.266
+   "close": 322.94,
+   "market_value": 322.94,
+   "unrealized_pnl": -73.2,
+   "unrealized_pct": -18.478
   },
   {
    "engine": "QUANT",
-   "symbol": "WDC",
+   "symbol": "PANW",
    "qty": 1,
-   "avg_cost": 356.8,
+   "avg_cost": 359.12,
    "opened_date": "2026-11-03",
-   "close": 313.31,
-   "market_value": 313.31,
-   "unrealized_pnl": -43.49,
-   "unrealized_pct": -12.189
+   "close": 322.66,
+   "market_value": 322.66,
+   "unrealized_pnl": -36.46,
+   "unrealized_pct": -10.153
   },
   {
    "engine": "QUANT",
@@ -416,10 +425,21 @@
    "qty": 1,
    "avg_cost": 304.77,
    "opened_date": "2026-11-02",
-   "close": 309.81,
-   "market_value": 309.81,
-   "unrealized_pnl": 5.04,
-   "unrealized_pct": 1.654
+   "close": 312.48,
+   "market_value": 312.48,
+   "unrealized_pnl": 7.71,
+   "unrealized_pct": 2.53
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "WDC",
+   "qty": 1,
+   "avg_cost": 356.8,
+   "opened_date": "2026-11-03",
+   "close": 311.21,
+   "market_value": 311.21,
+   "unrealized_pnl": -45.59,
+   "unrealized_pct": -12.777
   },
   {
    "engine": "QUANT",
@@ -427,21 +447,10 @@
    "qty": 1,
    "avg_cost": 306.06,
    "opened_date": "2026-11-03",
-   "close": 305.64,
-   "market_value": 305.64,
-   "unrealized_pnl": -0.42,
-   "unrealized_pct": -0.137
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "CIEN",
-   "qty": 1,
-   "avg_cost": 304.0,
-   "opened_date": "2026-11-03",
-   "close": 296.04,
-   "market_value": 296.04,
-   "unrealized_pnl": -7.96,
-   "unrealized_pct": -2.618
+   "close": 304.23,
+   "market_value": 304.23,
+   "unrealized_pnl": -1.83,
+   "unrealized_pct": -0.598
   },
   {
    "engine": "QUANT",
@@ -449,10 +458,21 @@
    "qty": 1,
    "avg_cost": 314.0,
    "opened_date": "2026-11-02",
-   "close": 291.78,
-   "market_value": 291.78,
-   "unrealized_pnl": -22.22,
-   "unrealized_pct": -7.076
+   "close": 296.3,
+   "market_value": 296.3,
+   "unrealized_pnl": -17.7,
+   "unrealized_pct": -5.637
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "CIEN",
+   "qty": 1,
+   "avg_cost": 304.0,
+   "opened_date": "2026-11-03",
+   "close": 293.99,
+   "market_value": 293.99,
+   "unrealized_pnl": -10.01,
+   "unrealized_pct": -3.293
   },
   {
    "engine": "QUANT",
@@ -460,10 +480,10 @@
    "qty": 1,
    "avg_cost": 274.61,
    "opened_date": "2026-11-02",
-   "close": 265.78,
-   "market_value": 265.78,
-   "unrealized_pnl": -8.83,
-   "unrealized_pct": -3.215
+   "close": 263.75,
+   "market_value": 263.75,
+   "unrealized_pnl": -10.86,
+   "unrealized_pct": -3.955
   },
   {
    "engine": "QUANT",
@@ -471,32 +491,10 @@
    "qty": 1,
    "avg_cost": 277.62,
    "opened_date": "2026-11-03",
-   "close": 258.68,
-   "market_value": 258.68,
-   "unrealized_pnl": -18.94,
-   "unrealized_pct": -6.822
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "MTSI",
-   "qty": 1,
-   "avg_cost": 239.6,
-   "opened_date": "2026-11-03",
-   "close": 249.86,
-   "market_value": 249.86,
-   "unrealized_pnl": 10.26,
-   "unrealized_pct": 4.282
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "MRNA",
-   "qty": 1,
-   "avg_cost": 227.88,
-   "opened_date": "2026-11-02",
-   "close": 248.69,
-   "market_value": 248.69,
-   "unrealized_pnl": 20.81,
-   "unrealized_pct": 9.132
+   "close": 262.91,
+   "market_value": 262.91,
+   "unrealized_pnl": -14.71,
+   "unrealized_pct": -5.299
   },
   {
    "engine": "QUANT",
@@ -504,10 +502,21 @@
    "qty": 1,
    "avg_cost": 237.64,
    "opened_date": "2026-11-03",
-   "close": 247.16,
-   "market_value": 247.16,
-   "unrealized_pnl": 9.52,
-   "unrealized_pct": 4.006
+   "close": 246.03,
+   "market_value": 246.03,
+   "unrealized_pnl": 8.39,
+   "unrealized_pct": 3.531
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "MTSI",
+   "qty": 1,
+   "avg_cost": 239.6,
+   "opened_date": "2026-11-03",
+   "close": 245.76,
+   "market_value": 245.76,
+   "unrealized_pnl": 6.16,
+   "unrealized_pct": 2.571
   },
   {
    "engine": "QUANT",
@@ -515,10 +524,10 @@
    "qty": 1,
    "avg_cost": 235.41,
    "opened_date": "2026-11-03",
-   "close": 235.88,
-   "market_value": 235.88,
-   "unrealized_pnl": 0.47,
-   "unrealized_pct": 0.2
+   "close": 233.78,
+   "market_value": 233.78,
+   "unrealized_pnl": -1.63,
+   "unrealized_pct": -0.692
   },
   {
    "engine": "QUANT",
@@ -526,21 +535,21 @@
    "qty": 1,
    "avg_cost": 209.5,
    "opened_date": "2026-11-03",
-   "close": 234.51,
-   "market_value": 234.51,
-   "unrealized_pnl": 25.01,
-   "unrealized_pct": 11.938
+   "close": 232.08,
+   "market_value": 232.08,
+   "unrealized_pnl": 22.58,
+   "unrealized_pct": 10.778
   },
   {
    "engine": "QUANT",
-   "symbol": "ALAB",
+   "symbol": "MRNA",
    "qty": 1,
-   "avg_cost": 248.91,
-   "opened_date": "2026-11-03",
-   "close": 230.91,
-   "market_value": 230.91,
-   "unrealized_pnl": -18.0,
-   "unrealized_pct": -7.232
+   "avg_cost": 227.88,
+   "opened_date": "2026-11-02",
+   "close": 231.35,
+   "market_value": 231.35,
+   "unrealized_pnl": 3.47,
+   "unrealized_pct": 1.523
   },
   {
    "engine": "QUANT",
@@ -548,21 +557,21 @@
    "qty": 1,
    "avg_cost": 244.5,
    "opened_date": "2026-11-03",
-   "close": 229.06,
-   "market_value": 229.06,
-   "unrealized_pnl": -15.44,
-   "unrealized_pct": -6.315
+   "close": 229.87,
+   "market_value": 229.87,
+   "unrealized_pnl": -14.63,
+   "unrealized_pct": -5.984
   },
   {
    "engine": "QUANT",
-   "symbol": "SN",
+   "symbol": "ALAB",
    "qty": 1,
-   "avg_cost": 214.17,
-   "opened_date": "2026-11-02",
-   "close": 226.93,
-   "market_value": 226.93,
-   "unrealized_pnl": 12.76,
-   "unrealized_pct": 5.958
+   "avg_cost": 248.91,
+   "opened_date": "2026-11-03",
+   "close": 227.79,
+   "market_value": 227.79,
+   "unrealized_pnl": -21.12,
+   "unrealized_pct": -8.485
   },
   {
    "engine": "QUANT",
@@ -570,43 +579,21 @@
    "qty": 1,
    "avg_cost": 211.09,
    "opened_date": "2026-11-03",
-   "close": 226.0,
-   "market_value": 226.0,
-   "unrealized_pnl": 14.91,
-   "unrealized_pct": 7.063
+   "close": 221.5,
+   "market_value": 221.5,
+   "unrealized_pnl": 10.41,
+   "unrealized_pct": 4.932
   },
   {
    "engine": "QUANT",
-   "symbol": "TWLO",
+   "symbol": "SN",
    "qty": 1,
-   "avg_cost": 210.35,
-   "opened_date": "2026-11-03",
-   "close": 219.48,
-   "market_value": 219.48,
-   "unrealized_pnl": 9.13,
-   "unrealized_pct": 4.34
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ONTO",
-   "qty": 1,
-   "avg_cost": 203.29,
-   "opened_date": "2026-11-03",
-   "close": 215.06,
-   "market_value": 215.06,
-   "unrealized_pnl": 11.77,
-   "unrealized_pct": 5.79
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ILMN",
-   "qty": 1,
-   "avg_cost": 238.84,
-   "opened_date": "2026-11-03",
-   "close": 212.93,
-   "market_value": 212.93,
-   "unrealized_pnl": -25.91,
-   "unrealized_pct": -10.848
+   "avg_cost": 214.17,
+   "opened_date": "2026-11-02",
+   "close": 220.14,
+   "market_value": 220.14,
+   "unrealized_pnl": 5.97,
+   "unrealized_pct": 2.788
   },
   {
    "engine": "QUANT",
@@ -614,21 +601,21 @@
    "qty": 1,
    "avg_cost": 226.52,
    "opened_date": "2026-11-03",
-   "close": 212.03,
-   "market_value": 212.03,
-   "unrealized_pnl": -14.49,
-   "unrealized_pct": -6.397
+   "close": 212.64,
+   "market_value": 212.64,
+   "unrealized_pnl": -13.88,
+   "unrealized_pct": -6.127
   },
   {
    "engine": "QUANT",
-   "symbol": "PLXS",
+   "symbol": "TWLO",
    "qty": 1,
-   "avg_cost": 217.84,
+   "avg_cost": 210.35,
    "opened_date": "2026-11-03",
-   "close": 211.92,
-   "market_value": 211.92,
-   "unrealized_pnl": -5.92,
-   "unrealized_pct": -2.718
+   "close": 212.21,
+   "market_value": 212.21,
+   "unrealized_pnl": 1.86,
+   "unrealized_pct": 0.884
   },
   {
    "engine": "QUANT",
@@ -636,10 +623,43 @@
    "qty": 1,
    "avg_cost": 204.64,
    "opened_date": "2026-11-03",
-   "close": 210.38,
-   "market_value": 210.38,
-   "unrealized_pnl": 5.74,
-   "unrealized_pct": 2.805
+   "close": 210.78,
+   "market_value": 210.78,
+   "unrealized_pnl": 6.14,
+   "unrealized_pct": 3.0
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "PLXS",
+   "qty": 1,
+   "avg_cost": 217.84,
+   "opened_date": "2026-11-03",
+   "close": 210.75,
+   "market_value": 210.75,
+   "unrealized_pnl": -7.09,
+   "unrealized_pct": -3.255
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ONTO",
+   "qty": 1,
+   "avg_cost": 203.29,
+   "opened_date": "2026-11-03",
+   "close": 209.67,
+   "market_value": 209.67,
+   "unrealized_pnl": 6.38,
+   "unrealized_pct": 3.138
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ILMN",
+   "qty": 1,
+   "avg_cost": 238.84,
+   "opened_date": "2026-11-03",
+   "close": 209.55,
+   "market_value": 209.55,
+   "unrealized_pnl": -29.29,
+   "unrealized_pct": -12.263
   },
   {
    "engine": "QUANT",
@@ -647,10 +667,10 @@
    "qty": 1,
    "avg_cost": 217.98,
    "opened_date": "2026-11-03",
-   "close": 209.47,
-   "market_value": 209.47,
-   "unrealized_pnl": -8.51,
-   "unrealized_pct": -3.904
+   "close": 201.93,
+   "market_value": 201.93,
+   "unrealized_pnl": -16.05,
+   "unrealized_pct": -7.363
   },
   {
    "engine": "QUANT",
@@ -658,10 +678,10 @@
    "qty": 1,
    "avg_cost": 210.06,
    "opened_date": "2026-11-03",
-   "close": 198.03,
-   "market_value": 198.03,
-   "unrealized_pnl": -12.03,
-   "unrealized_pct": -5.727
+   "close": 198.2,
+   "market_value": 198.2,
+   "unrealized_pnl": -11.86,
+   "unrealized_pct": -5.646
   },
   {
    "engine": "QUANT",
@@ -669,21 +689,10 @@
    "qty": 1,
    "avg_cost": 181.35,
    "opened_date": "2026-11-03",
-   "close": 187.53,
-   "market_value": 187.53,
-   "unrealized_pnl": 6.18,
-   "unrealized_pct": 3.408
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "AZN",
-   "qty": 1,
-   "avg_cost": 186.04,
-   "opened_date": "2026-11-03",
-   "close": 185.48,
-   "market_value": 185.48,
-   "unrealized_pnl": -0.56,
-   "unrealized_pct": -0.301
+   "close": 190.16,
+   "market_value": 190.16,
+   "unrealized_pnl": 8.81,
+   "unrealized_pct": 4.858
   },
   {
    "engine": "QUANT",
@@ -691,10 +700,21 @@
    "qty": 1,
    "avg_cost": 193.41,
    "opened_date": "2026-11-03",
-   "close": 183.12,
-   "market_value": 183.12,
-   "unrealized_pnl": -10.29,
-   "unrealized_pct": -5.32
+   "close": 186.08,
+   "market_value": 186.08,
+   "unrealized_pnl": -7.33,
+   "unrealized_pct": -3.79
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "AZN",
+   "qty": 1,
+   "avg_cost": 186.04,
+   "opened_date": "2026-11-03",
+   "close": 184.38,
+   "market_value": 184.38,
+   "unrealized_pnl": -1.66,
+   "unrealized_pct": -0.892
   },
   {
    "engine": "QUANT",
@@ -702,10 +722,10 @@
    "qty": 1,
    "avg_cost": 186.13,
    "opened_date": "2026-11-03",
-   "close": 182.25,
-   "market_value": 182.25,
-   "unrealized_pnl": -3.88,
-   "unrealized_pct": -2.085
+   "close": 182.54,
+   "market_value": 182.54,
+   "unrealized_pnl": -3.59,
+   "unrealized_pct": -1.929
   },
   {
    "engine": "QUANT",
@@ -713,21 +733,10 @@
    "qty": 1,
    "avg_cost": 191.38,
    "opened_date": "2026-11-02",
-   "close": 180.7,
-   "market_value": 180.7,
-   "unrealized_pnl": -10.68,
-   "unrealized_pct": -5.581
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "MRVL",
-   "qty": 1,
-   "avg_cost": 172.16,
-   "opened_date": "2026-11-03",
-   "close": 168.8,
-   "market_value": 168.8,
-   "unrealized_pnl": -3.36,
-   "unrealized_pct": -1.952
+   "close": 176.35,
+   "market_value": 176.35,
+   "unrealized_pnl": -15.03,
+   "unrealized_pct": -7.853
   },
   {
    "engine": "QUANT",
@@ -735,10 +744,21 @@
    "qty": 1,
    "avg_cost": 183.0,
    "opened_date": "2026-11-03",
-   "close": 168.1,
-   "market_value": 168.1,
-   "unrealized_pnl": -14.9,
-   "unrealized_pct": -8.142
+   "close": 164.69,
+   "market_value": 164.69,
+   "unrealized_pnl": -18.31,
+   "unrealized_pct": -10.005
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "MRVL",
+   "qty": 1,
+   "avg_cost": 172.16,
+   "opened_date": "2026-11-03",
+   "close": 164.45,
+   "market_value": 164.45,
+   "unrealized_pnl": -7.71,
+   "unrealized_pct": -4.478
   },
   {
    "engine": "QUANT",
@@ -746,10 +766,10 @@
    "qty": 1,
    "avg_cost": 158.92,
    "opened_date": "2026-11-03",
-   "close": 158.87,
-   "market_value": 158.87,
-   "unrealized_pnl": -0.05,
-   "unrealized_pct": -0.031
+   "close": 157.86,
+   "market_value": 157.86,
+   "unrealized_pnl": -1.06,
+   "unrealized_pct": -0.667
   },
   {
    "engine": "QUANT",
@@ -757,32 +777,10 @@
    "qty": 1,
    "avg_cost": 176.2,
    "opened_date": "2026-11-03",
-   "close": 154.78,
-   "market_value": 154.78,
-   "unrealized_pnl": -21.42,
-   "unrealized_pct": -12.157
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "NBIS",
-   "qty": 1,
-   "avg_cost": 144.95,
-   "opened_date": "2026-11-03",
-   "close": 154.69,
-   "market_value": 154.69,
-   "unrealized_pnl": 9.74,
-   "unrealized_pct": 6.72
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ANF",
-   "qty": 1,
-   "avg_cost": 161.51,
-   "opened_date": "2026-11-03",
-   "close": 151.92,
-   "market_value": 151.92,
-   "unrealized_pnl": -9.59,
-   "unrealized_pct": -5.938
+   "close": 154.86,
+   "market_value": 154.86,
+   "unrealized_pnl": -21.34,
+   "unrealized_pct": -12.111
   },
   {
    "engine": "QUANT",
@@ -790,10 +788,21 @@
    "qty": 1,
    "avg_cost": 154.3,
    "opened_date": "2026-11-03",
-   "close": 150.85,
-   "market_value": 150.85,
-   "unrealized_pnl": -3.45,
-   "unrealized_pct": -2.236
+   "close": 151.79,
+   "market_value": 151.79,
+   "unrealized_pnl": -2.51,
+   "unrealized_pct": -1.627
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ANF",
+   "qty": 1,
+   "avg_cost": 161.51,
+   "opened_date": "2026-11-03",
+   "close": 150.49,
+   "market_value": 150.49,
+   "unrealized_pnl": -11.02,
+   "unrealized_pct": -6.823
   },
   {
    "engine": "QUANT",
@@ -801,10 +810,10 @@
    "qty": 1,
    "avg_cost": 169.16,
    "opened_date": "2026-11-03",
-   "close": 145.19,
-   "market_value": 145.19,
-   "unrealized_pnl": -23.97,
-   "unrealized_pct": -14.17
+   "close": 142.43,
+   "market_value": 142.43,
+   "unrealized_pnl": -26.73,
+   "unrealized_pct": -15.802
   },
   {
    "engine": "QUANT",
@@ -812,10 +821,10 @@
    "qty": 1,
    "avg_cost": 132.8,
    "opened_date": "2026-11-03",
-   "close": 135.91,
-   "market_value": 135.91,
-   "unrealized_pnl": 3.11,
-   "unrealized_pct": 2.342
+   "close": 134.58,
+   "market_value": 134.58,
+   "unrealized_pnl": 1.78,
+   "unrealized_pct": 1.34
   },
   {
    "engine": "QUANT",
@@ -823,21 +832,10 @@
    "qty": 1,
    "avg_cost": 144.39,
    "opened_date": "2026-11-03",
-   "close": 134.86,
-   "market_value": 134.86,
-   "unrealized_pnl": -9.53,
-   "unrealized_pct": -6.6
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "KYMR",
-   "qty": 1,
-   "avg_cost": 133.9,
-   "opened_date": "2026-11-03",
-   "close": 134.84,
-   "market_value": 134.84,
-   "unrealized_pnl": 0.94,
-   "unrealized_pct": 0.702
+   "close": 134.38,
+   "market_value": 134.38,
+   "unrealized_pnl": -10.01,
+   "unrealized_pct": -6.933
   },
   {
    "engine": "QUANT",
@@ -845,10 +843,10 @@
    "qty": 1,
    "avg_cost": 137.17,
    "opened_date": "2026-11-03",
-   "close": 130.89,
-   "market_value": 130.89,
-   "unrealized_pnl": -6.28,
-   "unrealized_pct": -4.578
+   "close": 129.92,
+   "market_value": 129.92,
+   "unrealized_pnl": -7.25,
+   "unrealized_pct": -5.285
   },
   {
    "engine": "QUANT",
@@ -856,10 +854,32 @@
    "qty": 1,
    "avg_cost": 129.19,
    "opened_date": "2026-11-03",
-   "close": 128.1,
-   "market_value": 128.1,
-   "unrealized_pnl": -1.09,
-   "unrealized_pct": -0.844
+   "close": 129.54,
+   "market_value": 129.54,
+   "unrealized_pnl": 0.35,
+   "unrealized_pct": 0.271
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "NBIS",
+   "qty": 1,
+   "avg_cost": 144.95,
+   "opened_date": "2026-11-03",
+   "close": 128.64,
+   "market_value": 128.64,
+   "unrealized_pnl": -16.31,
+   "unrealized_pct": -11.252
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "KYMR",
+   "qty": 1,
+   "avg_cost": 133.9,
+   "opened_date": "2026-11-03",
+   "close": 127.17,
+   "market_value": 127.17,
+   "unrealized_pnl": -6.73,
+   "unrealized_pct": -5.026
   },
   {
    "engine": "QUANT",
@@ -867,21 +887,10 @@
    "qty": 1,
    "avg_cost": 126.64,
    "opened_date": "2026-11-03",
-   "close": 126.68,
-   "market_value": 126.68,
-   "unrealized_pnl": 0.04,
-   "unrealized_pct": 0.032
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "SPHR",
-   "qty": 1,
-   "avg_cost": 106.34,
-   "opened_date": "2026-11-03",
-   "close": 126.45,
-   "market_value": 126.45,
-   "unrealized_pnl": 20.11,
-   "unrealized_pct": 18.911
+   "close": 126.42,
+   "market_value": 126.42,
+   "unrealized_pnl": -0.22,
+   "unrealized_pct": -0.174
   },
   {
    "engine": "QUANT",
@@ -889,54 +898,21 @@
    "qty": 1,
    "avg_cost": 115.99,
    "opened_date": "2026-11-03",
-   "close": 125.74,
-   "market_value": 125.74,
-   "unrealized_pnl": 9.75,
-   "unrealized_pct": 8.406
+   "close": 124.44,
+   "market_value": 124.44,
+   "unrealized_pnl": 8.45,
+   "unrealized_pct": 7.285
   },
   {
    "engine": "QUANT",
-   "symbol": "SMTC",
+   "symbol": "SPHR",
    "qty": 1,
-   "avg_cost": 129.43,
+   "avg_cost": 106.34,
    "opened_date": "2026-11-03",
-   "close": 125.22,
-   "market_value": 125.22,
-   "unrealized_pnl": -4.21,
-   "unrealized_pct": -3.253
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "TWST",
-   "qty": 1,
-   "avg_cost": 138.79,
-   "opened_date": "2026-11-03",
-   "close": 122.59,
-   "market_value": 122.59,
-   "unrealized_pnl": -16.2,
-   "unrealized_pct": -11.672
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "XMTR",
-   "qty": 1,
-   "avg_cost": 93.23,
-   "opened_date": "2026-11-03",
-   "close": 122.47,
-   "market_value": 122.47,
-   "unrealized_pnl": 29.24,
-   "unrealized_pct": 31.363
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "HNGE",
-   "qty": 1,
-   "avg_cost": 116.0,
-   "opened_date": "2026-11-03",
-   "close": 121.72,
-   "market_value": 121.72,
-   "unrealized_pnl": 5.72,
-   "unrealized_pct": 4.931
+   "close": 123.66,
+   "market_value": 123.66,
+   "unrealized_pnl": 17.32,
+   "unrealized_pct": 16.287
   },
   {
    "engine": "QUANT",
@@ -944,10 +920,32 @@
    "qty": 1,
    "avg_cost": 120.0,
    "opened_date": "2026-11-03",
-   "close": 120.54,
-   "market_value": 120.54,
-   "unrealized_pnl": 0.54,
-   "unrealized_pct": 0.45
+   "close": 122.71,
+   "market_value": 122.71,
+   "unrealized_pnl": 2.71,
+   "unrealized_pct": 2.258
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "HNGE",
+   "qty": 1,
+   "avg_cost": 116.0,
+   "opened_date": "2026-11-03",
+   "close": 120.99,
+   "market_value": 120.99,
+   "unrealized_pnl": 4.99,
+   "unrealized_pct": 4.302
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "XMTR",
+   "qty": 1,
+   "avg_cost": 93.23,
+   "opened_date": "2026-11-03",
+   "close": 120.78,
+   "market_value": 120.78,
+   "unrealized_pnl": 27.55,
+   "unrealized_pct": 29.551
   },
   {
    "engine": "QUANT",
@@ -955,54 +953,32 @@
    "qty": 1,
    "avg_cost": 128.89,
    "opened_date": "2026-11-03",
-   "close": 120.46,
-   "market_value": 120.46,
-   "unrealized_pnl": -8.43,
-   "unrealized_pct": -6.54
+   "close": 119.5,
+   "market_value": 119.5,
+   "unrealized_pnl": -9.39,
+   "unrealized_pct": -7.285
   },
   {
    "engine": "QUANT",
-   "symbol": "AGL",
+   "symbol": "SMTC",
    "qty": 1,
-   "avg_cost": 88.37,
+   "avg_cost": 129.43,
    "opened_date": "2026-11-03",
-   "close": 114.81,
-   "market_value": 114.81,
-   "unrealized_pnl": 26.44,
-   "unrealized_pct": 29.92
+   "close": 119.44,
+   "market_value": 119.44,
+   "unrealized_pnl": -9.99,
+   "unrealized_pct": -7.718
   },
   {
    "engine": "QUANT",
-   "symbol": "ECPG",
+   "symbol": "TWST",
    "qty": 1,
-   "avg_cost": 101.26,
+   "avg_cost": 138.79,
    "opened_date": "2026-11-03",
-   "close": 112.35,
-   "market_value": 112.35,
-   "unrealized_pnl": 11.09,
-   "unrealized_pct": 10.952
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "VSXY",
-   "qty": 1,
-   "avg_cost": 100.5,
-   "opened_date": "2026-11-03",
-   "close": 109.86,
-   "market_value": 109.86,
-   "unrealized_pnl": 9.36,
-   "unrealized_pct": 9.313
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "CAKE",
-   "qty": 1,
-   "avg_cost": 114.23,
-   "opened_date": "2026-11-03",
-   "close": 109.67,
-   "market_value": 109.67,
-   "unrealized_pnl": -4.56,
-   "unrealized_pct": -3.992
+   "close": 114.22,
+   "market_value": 114.22,
+   "unrealized_pnl": -24.57,
+   "unrealized_pct": -17.703
   },
   {
    "engine": "QUANT",
@@ -1010,10 +986,32 @@
    "qty": 1,
    "avg_cost": 95.9,
    "opened_date": "2026-11-02",
-   "close": 109.51,
-   "market_value": 109.51,
-   "unrealized_pnl": 13.61,
-   "unrealized_pct": 14.192
+   "close": 110.6,
+   "market_value": 110.6,
+   "unrealized_pnl": 14.7,
+   "unrealized_pct": 15.328
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "AGL",
+   "qty": 1,
+   "avg_cost": 88.37,
+   "opened_date": "2026-11-03",
+   "close": 110.3,
+   "market_value": 110.3,
+   "unrealized_pnl": 21.93,
+   "unrealized_pct": 24.816
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ECPG",
+   "qty": 1,
+   "avg_cost": 101.26,
+   "opened_date": "2026-11-03",
+   "close": 109.86,
+   "market_value": 109.86,
+   "unrealized_pnl": 8.6,
+   "unrealized_pct": 8.493
   },
   {
    "engine": "QUANT",
@@ -1021,10 +1019,21 @@
    "qty": 1,
    "avg_cost": 100.72,
    "opened_date": "2026-11-03",
-   "close": 109.34,
-   "market_value": 109.34,
-   "unrealized_pnl": 8.62,
-   "unrealized_pct": 8.558
+   "close": 108.25,
+   "market_value": 108.25,
+   "unrealized_pnl": 7.53,
+   "unrealized_pct": 7.476
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "CAKE",
+   "qty": 1,
+   "avg_cost": 114.23,
+   "opened_date": "2026-11-03",
+   "close": 106.2,
+   "market_value": 106.2,
+   "unrealized_pnl": -8.03,
+   "unrealized_pct": -7.03
   },
   {
    "engine": "QUANT",
@@ -1032,10 +1041,10 @@
    "qty": 1,
    "avg_cost": 103.07,
    "opened_date": "2026-11-03",
-   "close": 107.3,
-   "market_value": 107.3,
-   "unrealized_pnl": 4.23,
-   "unrealized_pct": 4.104
+   "close": 106.07,
+   "market_value": 106.07,
+   "unrealized_pnl": 3.0,
+   "unrealized_pct": 2.911
   },
   {
    "engine": "QUANT",
@@ -1043,32 +1052,10 @@
    "qty": 1,
    "avg_cost": 98.35,
    "opened_date": "2026-11-03",
-   "close": 107.17,
-   "market_value": 107.17,
-   "unrealized_pnl": 8.82,
-   "unrealized_pct": 8.968
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "SYRE",
-   "qty": 1,
-   "avg_cost": 98.01,
-   "opened_date": "2026-11-03",
-   "close": 106.82,
-   "market_value": 106.82,
-   "unrealized_pnl": 8.81,
-   "unrealized_pct": 8.989
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "DINO",
-   "qty": 1,
-   "avg_cost": 113.77,
-   "opened_date": "2026-11-03",
-   "close": 101.73,
-   "market_value": 101.73,
-   "unrealized_pnl": -12.04,
-   "unrealized_pct": -10.583
+   "close": 104.99,
+   "market_value": 104.99,
+   "unrealized_pnl": 6.64,
+   "unrealized_pct": 6.751
   },
   {
    "engine": "QUANT",
@@ -1076,32 +1063,43 @@
    "qty": 1,
    "avg_cost": 105.03,
    "opened_date": "2026-11-03",
-   "close": 101.27,
-   "market_value": 101.27,
-   "unrealized_pnl": -3.76,
-   "unrealized_pct": -3.58
+   "close": 104.65,
+   "market_value": 104.65,
+   "unrealized_pnl": -0.38,
+   "unrealized_pct": -0.362
   },
   {
    "engine": "QUANT",
-   "symbol": "AAMI",
+   "symbol": "VSXY",
    "qty": 1,
-   "avg_cost": 90.88,
-   "opened_date": "2026-11-02",
-   "close": 97.22,
-   "market_value": 97.22,
-   "unrealized_pnl": 6.34,
-   "unrealized_pct": 6.976
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "FORM",
-   "qty": 1,
-   "avg_cost": 93.46,
+   "avg_cost": 100.5,
    "opened_date": "2026-11-03",
-   "close": 95.78,
-   "market_value": 95.78,
-   "unrealized_pnl": 2.32,
-   "unrealized_pct": 2.482
+   "close": 104.63,
+   "market_value": 104.63,
+   "unrealized_pnl": 4.13,
+   "unrealized_pct": 4.109
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "SYRE",
+   "qty": 1,
+   "avg_cost": 98.01,
+   "opened_date": "2026-11-03",
+   "close": 102.91,
+   "market_value": 102.91,
+   "unrealized_pnl": 4.9,
+   "unrealized_pct": 4.999
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "DINO",
+   "qty": 1,
+   "avg_cost": 113.77,
+   "opened_date": "2026-11-03",
+   "close": 102.15,
+   "market_value": 102.15,
+   "unrealized_pnl": -11.62,
+   "unrealized_pct": -10.214
   },
   {
    "engine": "QUANT",
@@ -1109,32 +1107,21 @@
    "qty": 1,
    "avg_cost": 92.92,
    "opened_date": "2026-11-03",
-   "close": 95.76,
-   "market_value": 95.76,
-   "unrealized_pnl": 2.84,
-   "unrealized_pct": 3.056
+   "close": 96.28,
+   "market_value": 96.28,
+   "unrealized_pnl": 3.36,
+   "unrealized_pct": 3.616
   },
   {
    "engine": "QUANT",
-   "symbol": "NWPX",
+   "symbol": "AAMI",
    "qty": 1,
-   "avg_cost": 101.53,
-   "opened_date": "2026-11-03",
-   "close": 91.38,
-   "market_value": 91.38,
-   "unrealized_pnl": -10.15,
-   "unrealized_pct": -9.997
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "TIGO",
-   "qty": 1,
-   "avg_cost": 76.99,
-   "opened_date": "2026-11-03",
-   "close": 89.43,
-   "market_value": 89.43,
-   "unrealized_pnl": 12.44,
-   "unrealized_pct": 16.158
+   "avg_cost": 90.88,
+   "opened_date": "2026-11-02",
+   "close": 95.12,
+   "market_value": 95.12,
+   "unrealized_pnl": 4.24,
+   "unrealized_pct": 4.665
   },
   {
    "engine": "QUANT",
@@ -1142,10 +1129,32 @@
    "qty": 1,
    "avg_cost": 84.95,
    "opened_date": "2026-11-03",
-   "close": 89.3,
-   "market_value": 89.3,
-   "unrealized_pnl": 4.35,
-   "unrealized_pct": 5.121
+   "close": 92.48,
+   "market_value": 92.48,
+   "unrealized_pnl": 7.53,
+   "unrealized_pct": 8.864
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "FORM",
+   "qty": 1,
+   "avg_cost": 93.46,
+   "opened_date": "2026-11-03",
+   "close": 92.32,
+   "market_value": 92.32,
+   "unrealized_pnl": -1.14,
+   "unrealized_pct": -1.22
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "NWPX",
+   "qty": 1,
+   "avg_cost": 101.53,
+   "opened_date": "2026-11-03",
+   "close": 91.29,
+   "market_value": 91.29,
+   "unrealized_pnl": -10.24,
+   "unrealized_pct": -10.086
   },
   {
    "engine": "QUANT",
@@ -1153,43 +1162,10 @@
    "qty": 1,
    "avg_cost": 88.89,
    "opened_date": "2026-11-03",
-   "close": 87.15,
-   "market_value": 87.15,
-   "unrealized_pnl": -1.74,
-   "unrealized_pct": -1.957
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "AVT",
-   "qty": 1,
-   "avg_cost": 88.85,
-   "opened_date": "2026-11-03",
-   "close": 86.82,
-   "market_value": 86.82,
-   "unrealized_pnl": -2.03,
-   "unrealized_pct": -2.285
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ALNT",
-   "qty": 1,
-   "avg_cost": 90.22,
-   "opened_date": "2026-11-03",
-   "close": 86.28,
-   "market_value": 86.28,
-   "unrealized_pnl": -3.94,
-   "unrealized_pct": -4.367
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "GSAT",
-   "qty": 1,
-   "avg_cost": 83.21,
-   "opened_date": "2026-11-03",
-   "close": 86.04,
-   "market_value": 86.04,
-   "unrealized_pnl": 2.83,
-   "unrealized_pct": 3.401
+   "close": 90.07,
+   "market_value": 90.07,
+   "unrealized_pnl": 1.18,
+   "unrealized_pct": 1.327
   },
   {
    "engine": "QUANT",
@@ -1197,54 +1173,43 @@
    "qty": 1,
    "avg_cost": 92.92,
    "opened_date": "2026-11-03",
-   "close": 85.75,
-   "market_value": 85.75,
-   "unrealized_pnl": -7.17,
-   "unrealized_pct": -7.716
+   "close": 87.67,
+   "market_value": 87.67,
+   "unrealized_pnl": -5.25,
+   "unrealized_pct": -5.65
   },
   {
    "engine": "QUANT",
-   "symbol": "AUGO",
+   "symbol": "GSAT",
    "qty": 1,
-   "avg_cost": 66.9,
+   "avg_cost": 83.21,
    "opened_date": "2026-11-03",
-   "close": 81.4,
-   "market_value": 81.4,
-   "unrealized_pnl": 14.5,
-   "unrealized_pct": 21.674
+   "close": 86.235,
+   "market_value": 86.23,
+   "unrealized_pnl": 3.03,
+   "unrealized_pct": 3.635
   },
   {
    "engine": "QUANT",
-   "symbol": "CDNA",
+   "symbol": "AVT",
    "qty": 1,
-   "avg_cost": 88.44,
+   "avg_cost": 88.85,
    "opened_date": "2026-11-03",
-   "close": 81.17,
-   "market_value": 81.17,
-   "unrealized_pnl": -7.27,
-   "unrealized_pct": -8.22
+   "close": 85.64,
+   "market_value": 85.64,
+   "unrealized_pnl": -3.21,
+   "unrealized_pct": -3.613
   },
   {
    "engine": "QUANT",
-   "symbol": "MSGE",
+   "symbol": "ALNT",
    "qty": 1,
-   "avg_cost": 79.85,
+   "avg_cost": 90.22,
    "opened_date": "2026-11-03",
-   "close": 79.79,
-   "market_value": 79.79,
-   "unrealized_pnl": -0.06,
-   "unrealized_pct": -0.075
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "TTMI",
-   "qty": 1,
-   "avg_cost": 82.9,
-   "opened_date": "2026-11-03",
-   "close": 78.7,
-   "market_value": 78.7,
-   "unrealized_pnl": -4.2,
-   "unrealized_pct": -5.066
+   "close": 84.4,
+   "market_value": 84.4,
+   "unrealized_pnl": -5.82,
+   "unrealized_pct": -6.451
   },
   {
    "engine": "QUANT",
@@ -1252,10 +1217,54 @@
    "qty": 1,
    "avg_cost": 85.0,
    "opened_date": "2026-11-03",
-   "close": 76.53,
-   "market_value": 76.53,
-   "unrealized_pnl": -8.47,
-   "unrealized_pct": -9.965
+   "close": 82.69,
+   "market_value": 82.69,
+   "unrealized_pnl": -2.31,
+   "unrealized_pct": -2.718
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "TIGO",
+   "qty": 1,
+   "avg_cost": 76.99,
+   "opened_date": "2026-11-03",
+   "close": 80.83,
+   "market_value": 80.83,
+   "unrealized_pnl": 3.84,
+   "unrealized_pct": 4.988
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "CDNA",
+   "qty": 1,
+   "avg_cost": 88.44,
+   "opened_date": "2026-11-03",
+   "close": 79.81,
+   "market_value": 79.81,
+   "unrealized_pnl": -8.63,
+   "unrealized_pct": -9.758
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "MSGE",
+   "qty": 1,
+   "avg_cost": 79.85,
+   "opened_date": "2026-11-03",
+   "close": 78.8,
+   "market_value": 78.8,
+   "unrealized_pnl": -1.05,
+   "unrealized_pct": -1.315
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "AUGO",
+   "qty": 1,
+   "avg_cost": 66.9,
+   "opened_date": "2026-11-03",
+   "close": 77.94,
+   "market_value": 77.94,
+   "unrealized_pnl": 11.04,
+   "unrealized_pct": 16.502
   },
   {
    "engine": "QUANT",
@@ -1263,32 +1272,21 @@
    "qty": 1,
    "avg_cost": 82.06,
    "opened_date": "2026-11-03",
-   "close": 75.77,
-   "market_value": 75.77,
-   "unrealized_pnl": -6.29,
-   "unrealized_pct": -7.665
+   "close": 76.82,
+   "market_value": 76.82,
+   "unrealized_pnl": -5.24,
+   "unrealized_pct": -6.386
   },
   {
    "engine": "QUANT",
-   "symbol": "ZETA",
-   "qty": 2,
-   "avg_cost": 30.105,
-   "opened_date": "2026-11-03",
-   "close": 37.74,
-   "market_value": 75.48,
-   "unrealized_pnl": 15.27,
-   "unrealized_pct": 25.361
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "VSAT",
+   "symbol": "TTMI",
    "qty": 1,
-   "avg_cost": 76.76,
+   "avg_cost": 82.9,
    "opened_date": "2026-11-03",
-   "close": 75.115,
-   "market_value": 75.11,
-   "unrealized_pnl": -1.65,
-   "unrealized_pct": -2.143
+   "close": 76.28,
+   "market_value": 76.28,
+   "unrealized_pnl": -6.62,
+   "unrealized_pct": -7.986
   },
   {
    "engine": "QUANT",
@@ -1296,32 +1294,21 @@
    "qty": 1,
    "avg_cost": 76.21,
    "opened_date": "2026-11-03",
-   "close": 75.1,
-   "market_value": 75.1,
-   "unrealized_pnl": -1.11,
-   "unrealized_pct": -1.457
+   "close": 75.89,
+   "market_value": 75.89,
+   "unrealized_pnl": -0.32,
+   "unrealized_pct": -0.42
   },
   {
    "engine": "QUANT",
-   "symbol": "HYMC",
-   "qty": 4,
-   "avg_cost": 16.45,
+   "symbol": "ZETA",
+   "qty": 2,
+   "avg_cost": 30.105,
    "opened_date": "2026-11-03",
-   "close": 18.7,
-   "market_value": 74.8,
-   "unrealized_pnl": 9.0,
-   "unrealized_pct": 13.678
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "MRX",
-   "qty": 1,
-   "avg_cost": 65.7,
-   "opened_date": "2026-11-03",
-   "close": 73.93,
-   "market_value": 73.93,
-   "unrealized_pnl": 8.23,
-   "unrealized_pct": 12.527
+   "close": 37.27,
+   "market_value": 74.54,
+   "unrealized_pnl": 14.33,
+   "unrealized_pct": 23.8
   },
   {
    "engine": "QUANT",
@@ -1329,32 +1316,10 @@
    "qty": 1,
    "avg_cost": 76.2,
    "opened_date": "2026-11-02",
-   "close": 73.2,
-   "market_value": 73.2,
-   "unrealized_pnl": -3.0,
-   "unrealized_pct": -3.937
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "LION",
-   "qty": 5,
-   "avg_cost": 12.26,
-   "opened_date": "2026-11-03",
-   "close": 14.51,
-   "market_value": 72.55,
-   "unrealized_pnl": 11.25,
-   "unrealized_pct": 18.352
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "BFLY",
-   "qty": 10,
-   "avg_cost": 6.364,
-   "opened_date": "2026-11-03",
-   "close": 7.14,
-   "market_value": 71.4,
-   "unrealized_pnl": 7.76,
-   "unrealized_pct": 12.194
+   "close": 72.42,
+   "market_value": 72.42,
+   "unrealized_pnl": -3.78,
+   "unrealized_pct": -4.961
   },
   {
    "engine": "QUANT",
@@ -1362,21 +1327,32 @@
    "qty": 1,
    "avg_cost": 73.51,
    "opened_date": "2026-11-03",
-   "close": 71.18,
-   "market_value": 71.18,
-   "unrealized_pnl": -2.33,
-   "unrealized_pct": -3.17
+   "close": 72.03,
+   "market_value": 72.03,
+   "unrealized_pnl": -1.48,
+   "unrealized_pct": -2.013
   },
   {
    "engine": "QUANT",
-   "symbol": "FIGS",
-   "qty": 3,
-   "avg_cost": 21.94,
-   "opened_date": "2026-11-02",
-   "close": 23.4,
-   "market_value": 70.2,
-   "unrealized_pnl": 4.38,
-   "unrealized_pct": 6.655
+   "symbol": "MRX",
+   "qty": 1,
+   "avg_cost": 65.7,
+   "opened_date": "2026-11-03",
+   "close": 71.68,
+   "market_value": 71.68,
+   "unrealized_pnl": 5.98,
+   "unrealized_pct": 9.102
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "VSAT",
+   "qty": 1,
+   "avg_cost": 76.76,
+   "opened_date": "2026-11-03",
+   "close": 71.24,
+   "market_value": 71.24,
+   "unrealized_pnl": -5.52,
+   "unrealized_pct": -7.191
   },
   {
    "engine": "QUANT",
@@ -1384,21 +1360,21 @@
    "qty": 1,
    "avg_cost": 77.64,
    "opened_date": "2026-11-03",
-   "close": 69.73,
-   "market_value": 69.73,
-   "unrealized_pnl": -7.91,
-   "unrealized_pct": -10.188
+   "close": 70.96,
+   "market_value": 70.96,
+   "unrealized_pnl": -6.68,
+   "unrealized_pct": -8.604
   },
   {
    "engine": "QUANT",
-   "symbol": "IMMX",
-   "qty": 8,
-   "avg_cost": 7.55,
+   "symbol": "LION",
+   "qty": 5,
+   "avg_cost": 12.26,
    "opened_date": "2026-11-03",
-   "close": 8.66,
-   "market_value": 69.28,
-   "unrealized_pnl": 8.88,
-   "unrealized_pct": 14.702
+   "close": 14.09,
+   "market_value": 70.45,
+   "unrealized_pnl": 9.15,
+   "unrealized_pct": 14.927
   },
   {
    "engine": "QUANT",
@@ -1406,54 +1382,10 @@
    "qty": 1,
    "avg_cost": 69.21,
    "opened_date": "2026-11-03",
-   "close": 69.11,
-   "market_value": 69.11,
-   "unrealized_pnl": -0.1,
-   "unrealized_pct": -0.144
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ETON",
-   "qty": 1,
-   "avg_cost": 52.63,
-   "opened_date": "2026-11-03",
-   "close": 68.4,
-   "market_value": 68.4,
-   "unrealized_pnl": 15.77,
-   "unrealized_pct": 29.964
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "FEIM",
-   "qty": 1,
-   "avg_cost": 70.02,
-   "opened_date": "2026-11-03",
-   "close": 68.23,
-   "market_value": 68.23,
-   "unrealized_pnl": -1.79,
-   "unrealized_pct": -2.556
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ENLT",
-   "qty": 1,
-   "avg_cost": 66.15,
-   "opened_date": "2026-11-03",
-   "close": 67.85,
-   "market_value": 67.85,
-   "unrealized_pnl": 1.7,
-   "unrealized_pct": 2.57
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ERAS",
-   "qty": 4,
-   "avg_cost": 14.56,
-   "opened_date": "2026-11-03",
-   "close": 16.8,
-   "market_value": 67.2,
-   "unrealized_pnl": 8.96,
-   "unrealized_pct": 15.385
+   "close": 68.61,
+   "market_value": 68.61,
+   "unrealized_pnl": -0.6,
+   "unrealized_pct": -0.867
   },
   {
    "engine": "QUANT",
@@ -1461,65 +1393,65 @@
    "qty": 1,
    "avg_cost": 71.85,
    "opened_date": "2026-11-03",
-   "close": 67.16,
-   "market_value": 67.16,
-   "unrealized_pnl": -4.69,
-   "unrealized_pct": -6.527
+   "close": 68.41,
+   "market_value": 68.41,
+   "unrealized_pnl": -3.44,
+   "unrealized_pct": -4.788
   },
   {
    "engine": "QUANT",
-   "symbol": "DGII",
+   "symbol": "FIGS",
+   "qty": 3,
+   "avg_cost": 21.94,
+   "opened_date": "2026-11-02",
+   "close": 22.68,
+   "market_value": 68.04,
+   "unrealized_pnl": 2.22,
+   "unrealized_pct": 3.373
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "HYMC",
+   "qty": 4,
+   "avg_cost": 16.45,
+   "opened_date": "2026-11-03",
+   "close": 17.0,
+   "market_value": 68.0,
+   "unrealized_pnl": 2.2,
+   "unrealized_pct": 3.343
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ENLT",
    "qty": 1,
-   "avg_cost": 73.6,
+   "avg_cost": 66.15,
    "opened_date": "2026-11-03",
-   "close": 66.96,
-   "market_value": 66.96,
-   "unrealized_pnl": -6.64,
-   "unrealized_pct": -9.022
+   "close": 67.27,
+   "market_value": 67.27,
+   "unrealized_pnl": 1.12,
+   "unrealized_pct": 1.693
   },
   {
    "engine": "QUANT",
-   "symbol": "VIAV",
-   "qty": 2,
-   "avg_cost": 29.205,
-   "opened_date": "2026-11-03",
-   "close": 33.0,
-   "market_value": 66.0,
-   "unrealized_pnl": 7.59,
-   "unrealized_pct": 12.994
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "BB",
-   "qty": 7,
-   "avg_cost": 8.27,
-   "opened_date": "2026-11-03",
-   "close": 9.4,
-   "market_value": 65.8,
-   "unrealized_pnl": 7.91,
-   "unrealized_pct": 13.664
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "AEHR",
+   "symbol": "FEIM",
    "qty": 1,
-   "avg_cost": 60.16,
+   "avg_cost": 70.02,
    "opened_date": "2026-11-03",
-   "close": 65.78,
-   "market_value": 65.78,
-   "unrealized_pnl": 5.62,
-   "unrealized_pct": 9.342
+   "close": 67.25,
+   "market_value": 67.25,
+   "unrealized_pnl": -2.77,
+   "unrealized_pct": -3.956
   },
   {
    "engine": "QUANT",
-   "symbol": "VIR",
-   "qty": 5,
-   "avg_cost": 11.36,
+   "symbol": "BFLY",
+   "qty": 10,
+   "avg_cost": 6.364,
    "opened_date": "2026-11-03",
-   "close": 13.13,
-   "market_value": 65.65,
-   "unrealized_pnl": 8.85,
-   "unrealized_pct": 15.581
+   "close": 6.67,
+   "market_value": 66.7,
+   "unrealized_pnl": 3.06,
+   "unrealized_pct": 4.808
   },
   {
    "engine": "QUANT",
@@ -1527,43 +1459,21 @@
    "qty": 3,
    "avg_cost": 20.4967,
    "opened_date": "2026-11-03",
-   "close": 21.71,
-   "market_value": 65.13,
-   "unrealized_pnl": 3.64,
-   "unrealized_pct": 5.919
+   "close": 21.7,
+   "market_value": 65.1,
+   "unrealized_pnl": 3.61,
+   "unrealized_pct": 5.871
   },
   {
    "engine": "QUANT",
-   "symbol": "BHE",
-   "qty": 1,
-   "avg_cost": 72.44,
+   "symbol": "VIAV",
+   "qty": 2,
+   "avg_cost": 29.205,
    "opened_date": "2026-11-03",
-   "close": 64.98,
-   "market_value": 64.98,
-   "unrealized_pnl": -7.46,
-   "unrealized_pct": -10.298
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "TGB",
-   "qty": 9,
-   "avg_cost": 7.3333,
-   "opened_date": "2026-11-03",
-   "close": 7.21,
-   "market_value": 64.89,
-   "unrealized_pnl": -1.11,
-   "unrealized_pct": -1.681
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "GCT",
-   "qty": 1,
-   "avg_cost": 56.48,
-   "opened_date": "2026-11-03",
-   "close": 64.67,
-   "market_value": 64.67,
-   "unrealized_pnl": 8.19,
-   "unrealized_pct": 14.501
+   "close": 32.54,
+   "market_value": 65.08,
+   "unrealized_pnl": 6.67,
+   "unrealized_pct": 11.419
   },
   {
    "engine": "QUANT",
@@ -1571,21 +1481,54 @@
    "qty": 3,
    "avg_cost": 20.96,
    "opened_date": "2026-11-02",
-   "close": 21.44,
-   "market_value": 64.32,
-   "unrealized_pnl": 1.44,
-   "unrealized_pct": 2.29
+   "close": 21.65,
+   "market_value": 64.95,
+   "unrealized_pnl": 2.07,
+   "unrealized_pct": 3.292
   },
   {
    "engine": "QUANT",
-   "symbol": "CGAU",
-   "qty": 3,
-   "avg_cost": 20.3333,
+   "symbol": "BHE",
+   "qty": 1,
+   "avg_cost": 72.44,
    "opened_date": "2026-11-03",
-   "close": 21.28,
+   "close": 64.81,
+   "market_value": 64.81,
+   "unrealized_pnl": -7.63,
+   "unrealized_pct": -10.533
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "GCT",
+   "qty": 1,
+   "avg_cost": 56.48,
+   "opened_date": "2026-11-03",
+   "close": 64.79,
+   "market_value": 64.79,
+   "unrealized_pnl": 8.31,
+   "unrealized_pct": 14.713
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "IMMX",
+   "qty": 8,
+   "avg_cost": 7.55,
+   "opened_date": "2026-11-03",
+   "close": 8.07,
+   "market_value": 64.56,
+   "unrealized_pnl": 4.16,
+   "unrealized_pct": 6.887
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "BB",
+   "qty": 7,
+   "avg_cost": 8.27,
+   "opened_date": "2026-11-03",
+   "close": 9.12,
    "market_value": 63.84,
-   "unrealized_pnl": 2.84,
-   "unrealized_pct": 4.656
+   "unrealized_pnl": 5.95,
+   "unrealized_pct": 10.278
   },
   {
    "engine": "QUANT",
@@ -1593,76 +1536,43 @@
    "qty": 2,
    "avg_cost": 30.27,
    "opened_date": "2026-11-03",
-   "close": 31.88,
-   "market_value": 63.76,
-   "unrealized_pnl": 3.22,
-   "unrealized_pct": 5.319
+   "close": 31.67,
+   "market_value": 63.34,
+   "unrealized_pnl": 2.8,
+   "unrealized_pct": 4.625
   },
   {
    "engine": "QUANT",
-   "symbol": "AMLX",
-   "qty": 2,
-   "avg_cost": 29.46,
-   "opened_date": "2026-11-03",
-   "close": 31.8,
-   "market_value": 63.6,
-   "unrealized_pnl": 4.68,
-   "unrealized_pct": 7.943
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "INTC",
-   "qty": 1,
-   "avg_cost": 62.12,
-   "opened_date": "2026-11-03",
-   "close": 62.5,
-   "market_value": 62.5,
-   "unrealized_pnl": 0.38,
-   "unrealized_pct": 0.612
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ANRO",
-   "qty": 2,
-   "avg_cost": 23.55,
-   "opened_date": "2026-11-03",
-   "close": 31.15,
-   "market_value": 62.3,
-   "unrealized_pnl": 15.2,
-   "unrealized_pct": 32.272
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ARIS",
+   "symbol": "ERAS",
    "qty": 4,
-   "avg_cost": 14.54,
+   "avg_cost": 14.56,
    "opened_date": "2026-11-03",
-   "close": 15.53,
-   "market_value": 62.12,
-   "unrealized_pnl": 3.96,
-   "unrealized_pct": 6.809
+   "close": 15.78,
+   "market_value": 63.12,
+   "unrealized_pnl": 4.88,
+   "unrealized_pct": 8.379
   },
   {
    "engine": "QUANT",
-   "symbol": "TXG",
+   "symbol": "TGB",
+   "qty": 9,
+   "avg_cost": 7.3333,
+   "opened_date": "2026-11-03",
+   "close": 6.97,
+   "market_value": 62.73,
+   "unrealized_pnl": -3.27,
+   "unrealized_pct": -4.954
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ETON",
    "qty": 1,
-   "avg_cost": 64.66,
+   "avg_cost": 52.63,
    "opened_date": "2026-11-03",
-   "close": 62.05,
-   "market_value": 62.05,
-   "unrealized_pnl": -2.61,
-   "unrealized_pct": -4.036
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "CYRX",
-   "qty": 3,
-   "avg_cost": 16.81,
-   "opened_date": "2026-11-03",
-   "close": 20.56,
-   "market_value": 61.68,
-   "unrealized_pnl": 11.25,
-   "unrealized_pct": 22.308
+   "close": 61.45,
+   "market_value": 61.45,
+   "unrealized_pnl": 8.82,
+   "unrealized_pct": 16.759
   },
   {
    "engine": "QUANT",
@@ -1670,10 +1580,76 @@
    "qty": 8,
    "avg_cost": 7.58,
    "opened_date": "2026-11-03",
-   "close": 7.7,
-   "market_value": 61.6,
-   "unrealized_pnl": 0.96,
-   "unrealized_pct": 1.583
+   "close": 7.68,
+   "market_value": 61.44,
+   "unrealized_pnl": 0.8,
+   "unrealized_pct": 1.319
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ANRO",
+   "qty": 2,
+   "avg_cost": 23.55,
+   "opened_date": "2026-11-03",
+   "close": 30.62,
+   "market_value": 61.24,
+   "unrealized_pnl": 14.14,
+   "unrealized_pct": 30.021
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "INTC",
+   "qty": 1,
+   "avg_cost": 62.12,
+   "opened_date": "2026-11-03",
+   "close": 61.2,
+   "market_value": 61.2,
+   "unrealized_pnl": -0.92,
+   "unrealized_pct": -1.481
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "AEHR",
+   "qty": 1,
+   "avg_cost": 60.16,
+   "opened_date": "2026-11-03",
+   "close": 61.04,
+   "market_value": 61.04,
+   "unrealized_pnl": 0.88,
+   "unrealized_pct": 1.463
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "CGAU",
+   "qty": 3,
+   "avg_cost": 20.3333,
+   "opened_date": "2026-11-03",
+   "close": 20.29,
+   "market_value": 60.87,
+   "unrealized_pnl": -0.13,
+   "unrealized_pct": -0.213
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "VIR",
+   "qty": 5,
+   "avg_cost": 11.36,
+   "opened_date": "2026-11-03",
+   "close": 12.12,
+   "market_value": 60.6,
+   "unrealized_pnl": 3.8,
+   "unrealized_pct": 6.69
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "CYRX",
+   "qty": 3,
+   "avg_cost": 16.81,
+   "opened_date": "2026-11-03",
+   "close": 20.1,
+   "market_value": 60.3,
+   "unrealized_pnl": 9.87,
+   "unrealized_pct": 19.572
   },
   {
    "engine": "QUANT",
@@ -1681,21 +1657,43 @@
    "qty": 3,
    "avg_cost": 20.03,
    "opened_date": "2026-11-03",
-   "close": 20.38,
-   "market_value": 61.14,
-   "unrealized_pnl": 1.05,
-   "unrealized_pct": 1.747
+   "close": 20.06,
+   "market_value": 60.18,
+   "unrealized_pnl": 0.09,
+   "unrealized_pct": 0.15
   },
   {
    "engine": "QUANT",
-   "symbol": "SKE",
+   "symbol": "AMLX",
    "qty": 2,
-   "avg_cost": 27.17,
+   "avg_cost": 29.46,
    "opened_date": "2026-11-03",
-   "close": 30.57,
-   "market_value": 61.14,
-   "unrealized_pnl": 6.8,
-   "unrealized_pct": 12.514
+   "close": 29.86,
+   "market_value": 59.72,
+   "unrealized_pnl": 0.8,
+   "unrealized_pct": 1.358
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ARIS",
+   "qty": 4,
+   "avg_cost": 14.54,
+   "opened_date": "2026-11-03",
+   "close": 14.81,
+   "market_value": 59.24,
+   "unrealized_pnl": 1.08,
+   "unrealized_pct": 1.857
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "TXG",
+   "qty": 1,
+   "avg_cost": 64.66,
+   "opened_date": "2026-11-03",
+   "close": 59.1,
+   "market_value": 59.1,
+   "unrealized_pnl": -5.56,
+   "unrealized_pct": -8.599
   },
   {
    "engine": "QUANT",
@@ -1703,21 +1701,21 @@
    "qty": 1,
    "avg_cost": 64.36,
    "opened_date": "2026-11-03",
-   "close": 59.95,
-   "market_value": 59.95,
-   "unrealized_pnl": -4.41,
-   "unrealized_pct": -6.852
+   "close": 58.96,
+   "market_value": 58.96,
+   "unrealized_pnl": -5.4,
+   "unrealized_pct": -8.39
   },
   {
    "engine": "QUANT",
-   "symbol": "ABCL",
-   "qty": 5,
-   "avg_cost": 12.1,
+   "symbol": "DGII",
+   "qty": 1,
+   "avg_cost": 73.6,
    "opened_date": "2026-11-03",
-   "close": 11.95,
-   "market_value": 59.75,
-   "unrealized_pnl": -0.75,
-   "unrealized_pct": -1.24
+   "close": 58.44,
+   "market_value": 58.44,
+   "unrealized_pnl": -15.16,
+   "unrealized_pct": -20.598
   },
   {
    "engine": "QUANT",
@@ -1725,109 +1723,32 @@
    "qty": 2,
    "avg_cost": 30.53,
    "opened_date": "2026-11-03",
-   "close": 29.4,
-   "market_value": 58.8,
-   "unrealized_pnl": -2.26,
-   "unrealized_pct": -3.701
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "AXGN",
-   "qty": 1,
-   "avg_cost": 50.24,
-   "opened_date": "2026-11-03",
-   "close": 58.63,
-   "market_value": 58.63,
-   "unrealized_pnl": 8.39,
-   "unrealized_pct": 16.7
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "VSH",
-   "qty": 2,
-   "avg_cost": 26.4,
-   "opened_date": "2026-11-03",
    "close": 29.14,
    "market_value": 58.28,
-   "unrealized_pnl": 5.48,
-   "unrealized_pct": 10.379
+   "unrealized_pnl": -2.78,
+   "unrealized_pct": -4.553
   },
   {
    "engine": "QUANT",
-   "symbol": "NEOG",
+   "symbol": "ABCL",
    "qty": 5,
-   "avg_cost": 11.99,
+   "avg_cost": 12.1,
    "opened_date": "2026-11-03",
-   "close": 11.6,
-   "market_value": 58.0,
-   "unrealized_pnl": -1.95,
-   "unrealized_pct": -3.253
+   "close": 11.62,
+   "market_value": 58.1,
+   "unrealized_pnl": -2.4,
+   "unrealized_pct": -3.967
   },
   {
    "engine": "QUANT",
-   "symbol": "MBX",
-   "qty": 1,
-   "avg_cost": 57.1,
+   "symbol": "SKE",
+   "qty": 2,
+   "avg_cost": 27.17,
    "opened_date": "2026-11-03",
-   "close": 57.72,
-   "market_value": 57.72,
-   "unrealized_pnl": 0.62,
-   "unrealized_pct": 1.086
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "LFST",
-   "qty": 4,
-   "avg_cost": 13.39,
-   "opened_date": "2026-11-03",
-   "close": 14.37,
-   "market_value": 57.48,
-   "unrealized_pnl": 3.92,
-   "unrealized_pct": 7.319
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "VSTS",
-   "qty": 4,
-   "avg_cost": 14.87,
-   "opened_date": "2026-11-03",
-   "close": 14.35,
-   "market_value": 57.4,
-   "unrealized_pnl": -2.08,
-   "unrealized_pct": -3.497
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "BJRI",
-   "qty": 1,
-   "avg_cost": 62.67,
-   "opened_date": "2026-11-03",
-   "close": 57.15,
-   "market_value": 57.15,
-   "unrealized_pnl": -5.52,
-   "unrealized_pct": -8.808
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ALM",
-   "qty": 7,
-   "avg_cost": 8.94,
-   "opened_date": "2026-11-03",
-   "close": 8.16,
-   "market_value": 57.12,
-   "unrealized_pnl": -5.46,
-   "unrealized_pct": -8.725
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "PLSE",
-   "qty": 1,
-   "avg_cost": 54.5,
-   "opened_date": "2026-11-03",
-   "close": 56.98,
-   "market_value": 56.98,
-   "unrealized_pnl": 2.48,
-   "unrealized_pct": 4.55
+   "close": 28.98,
+   "market_value": 57.96,
+   "unrealized_pnl": 3.62,
+   "unrealized_pct": 6.662
   },
   {
    "engine": "QUANT",
@@ -1835,21 +1756,10 @@
    "qty": 2,
    "avg_cost": 30.43,
    "opened_date": "2026-11-03",
-   "close": 28.41,
-   "market_value": 56.82,
-   "unrealized_pnl": -4.04,
-   "unrealized_pct": -6.638
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "IOVA",
-   "qty": 7,
-   "avg_cost": 8.28,
-   "opened_date": "2026-11-03",
-   "close": 8.09,
-   "market_value": 56.63,
-   "unrealized_pnl": -1.33,
-   "unrealized_pct": -2.295
+   "close": 28.89,
+   "market_value": 57.78,
+   "unrealized_pnl": -3.08,
+   "unrealized_pct": -5.061
   },
   {
    "engine": "QUANT",
@@ -1857,32 +1767,43 @@
    "qty": 6,
    "avg_cost": 10.28,
    "opened_date": "2026-11-03",
-   "close": 9.42,
-   "market_value": 56.52,
-   "unrealized_pnl": -5.16,
-   "unrealized_pct": -8.366
+   "close": 9.62,
+   "market_value": 57.72,
+   "unrealized_pnl": -3.96,
+   "unrealized_pct": -6.42
   },
   {
    "engine": "QUANT",
-   "symbol": "AAOI",
-   "qty": 1,
-   "avg_cost": 63.22,
+   "symbol": "VSTS",
+   "qty": 4,
+   "avg_cost": 14.87,
    "opened_date": "2026-11-03",
-   "close": 55.86,
-   "market_value": 55.86,
-   "unrealized_pnl": -7.36,
-   "unrealized_pct": -11.642
+   "close": 14.19,
+   "market_value": 56.76,
+   "unrealized_pnl": -2.72,
+   "unrealized_pct": -4.573
   },
   {
    "engine": "QUANT",
-   "symbol": "CBLL",
-   "qty": 2,
-   "avg_cost": 27.77,
+   "symbol": "LFST",
+   "qty": 4,
+   "avg_cost": 13.39,
    "opened_date": "2026-11-03",
-   "close": 27.8,
-   "market_value": 55.6,
-   "unrealized_pnl": 0.06,
-   "unrealized_pct": 0.108
+   "close": 14.15,
+   "market_value": 56.6,
+   "unrealized_pnl": 3.04,
+   "unrealized_pct": 5.676
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "NEOG",
+   "qty": 5,
+   "avg_cost": 11.99,
+   "opened_date": "2026-11-03",
+   "close": 11.19,
+   "market_value": 55.95,
+   "unrealized_pnl": -4.0,
+   "unrealized_pct": -6.672
   },
   {
    "engine": "QUANT",
@@ -1890,43 +1811,32 @@
    "qty": 4,
    "avg_cost": 13.85,
    "opened_date": "2026-11-03",
-   "close": 13.89,
-   "market_value": 55.56,
-   "unrealized_pnl": 0.16,
-   "unrealized_pct": 0.289
+   "close": 13.9,
+   "market_value": 55.6,
+   "unrealized_pnl": 0.2,
+   "unrealized_pct": 0.361
   },
   {
    "engine": "QUANT",
-   "symbol": "FCEL",
-   "qty": 5,
-   "avg_cost": 11.32,
+   "symbol": "VSH",
+   "qty": 2,
+   "avg_cost": 26.4,
    "opened_date": "2026-11-03",
-   "close": 10.95,
-   "market_value": 54.75,
-   "unrealized_pnl": -1.85,
-   "unrealized_pct": -3.269
+   "close": 27.79,
+   "market_value": 55.58,
+   "unrealized_pnl": 2.78,
+   "unrealized_pct": 5.265
   },
   {
    "engine": "QUANT",
-   "symbol": "OMER",
-   "qty": 3,
-   "avg_cost": 18.39,
+   "symbol": "AXGN",
+   "qty": 1,
+   "avg_cost": 50.24,
    "opened_date": "2026-11-03",
-   "close": 18.15,
-   "market_value": 54.45,
-   "unrealized_pnl": -0.72,
-   "unrealized_pct": -1.305
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "APPS",
-   "qty": 7,
-   "avg_cost": 8.65,
-   "opened_date": "2026-11-03",
-   "close": 7.76,
-   "market_value": 54.32,
-   "unrealized_pnl": -6.23,
-   "unrealized_pct": -10.289
+   "close": 55.4,
+   "market_value": 55.4,
+   "unrealized_pnl": 5.16,
+   "unrealized_pct": 10.271
   },
   {
    "engine": "QUANT",
@@ -1934,21 +1844,54 @@
    "qty": 1,
    "avg_cost": 53.7,
    "opened_date": "2026-11-03",
-   "close": 54.18,
-   "market_value": 54.18,
-   "unrealized_pnl": 0.48,
-   "unrealized_pct": 0.894
+   "close": 55.36,
+   "market_value": 55.36,
+   "unrealized_pnl": 1.66,
+   "unrealized_pct": 3.091
   },
   {
    "engine": "QUANT",
-   "symbol": "VPG",
+   "symbol": "BJRI",
    "qty": 1,
-   "avg_cost": 55.34,
+   "avg_cost": 62.67,
    "opened_date": "2026-11-03",
-   "close": 53.82,
-   "market_value": 53.82,
-   "unrealized_pnl": -1.52,
-   "unrealized_pct": -2.747
+   "close": 54.89,
+   "market_value": 54.89,
+   "unrealized_pnl": -7.78,
+   "unrealized_pct": -12.414
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "MBX",
+   "qty": 1,
+   "avg_cost": 57.1,
+   "opened_date": "2026-11-03",
+   "close": 54.51,
+   "market_value": 54.51,
+   "unrealized_pnl": -2.59,
+   "unrealized_pct": -4.536
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "CBL",
+   "qty": 1,
+   "avg_cost": 50.43,
+   "opened_date": "2026-11-03",
+   "close": 54.29,
+   "market_value": 54.29,
+   "unrealized_pnl": 3.86,
+   "unrealized_pct": 7.654
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "OMER",
+   "qty": 3,
+   "avg_cost": 18.39,
+   "opened_date": "2026-11-03",
+   "close": 17.99,
+   "market_value": 53.97,
+   "unrealized_pnl": -1.2,
+   "unrealized_pct": -2.175
   },
   {
    "engine": "QUANT",
@@ -1963,25 +1906,69 @@
   },
   {
    "engine": "QUANT",
-   "symbol": "IBRX",
-   "qty": 8,
-   "avg_cost": 8.26,
+   "symbol": "ALM",
+   "qty": 7,
+   "avg_cost": 8.94,
    "opened_date": "2026-11-03",
-   "close": 6.67,
-   "market_value": 53.36,
-   "unrealized_pnl": -12.72,
-   "unrealized_pct": -19.249
+   "close": 7.63,
+   "market_value": 53.41,
+   "unrealized_pnl": -9.17,
+   "unrealized_pct": -14.653
   },
   {
    "engine": "QUANT",
-   "symbol": "CBL",
-   "qty": 1,
-   "avg_cost": 50.43,
+   "symbol": "IOVA",
+   "qty": 7,
+   "avg_cost": 8.28,
    "opened_date": "2026-11-03",
-   "close": 53.2,
-   "market_value": 53.2,
-   "unrealized_pnl": 2.77,
-   "unrealized_pct": 5.493
+   "close": 7.63,
+   "market_value": 53.41,
+   "unrealized_pnl": -4.55,
+   "unrealized_pct": -7.85
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "PTEN",
+   "qty": 5,
+   "avg_cost": 12.04,
+   "opened_date": "2026-11-03",
+   "close": 10.67,
+   "market_value": 53.35,
+   "unrealized_pnl": -6.85,
+   "unrealized_pct": -11.379
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "VPG",
+   "qty": 1,
+   "avg_cost": 55.34,
+   "opened_date": "2026-11-03",
+   "close": 52.93,
+   "market_value": 52.93,
+   "unrealized_pnl": -2.41,
+   "unrealized_pct": -4.355
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "AAOI",
+   "qty": 1,
+   "avg_cost": 63.22,
+   "opened_date": "2026-11-03",
+   "close": 52.85,
+   "market_value": 52.85,
+   "unrealized_pnl": -10.37,
+   "unrealized_pct": -16.403
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "CMBT",
+   "qty": 3,
+   "avg_cost": 17.39,
+   "opened_date": "2026-11-03",
+   "close": 17.61,
+   "market_value": 52.83,
+   "unrealized_pnl": 0.66,
+   "unrealized_pct": 1.265
   },
   {
    "engine": "QUANT",
@@ -1996,80 +1983,36 @@
   },
   {
    "engine": "QUANT",
-   "symbol": "ACMR",
-   "qty": 1,
-   "avg_cost": 45.55,
-   "opened_date": "2026-11-03",
-   "close": 52.43,
-   "market_value": 52.43,
-   "unrealized_pnl": 6.88,
-   "unrealized_pct": 15.104
-  },
-  {
-   "engine": "QUANT",
    "symbol": "URGN",
    "qty": 2,
    "avg_cost": 34.89,
    "opened_date": "2026-11-03",
-   "close": 26.1,
-   "market_value": 52.2,
-   "unrealized_pnl": -17.58,
-   "unrealized_pct": -25.193
+   "close": 26.39,
+   "market_value": 52.78,
+   "unrealized_pnl": -17.0,
+   "unrealized_pct": -24.362
   },
   {
    "engine": "QUANT",
-   "symbol": "CMBT",
-   "qty": 3,
-   "avg_cost": 17.39,
-   "opened_date": "2026-11-03",
-   "close": 17.37,
-   "market_value": 52.11,
-   "unrealized_pnl": -0.06,
-   "unrealized_pct": -0.115
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "PTEN",
-   "qty": 5,
-   "avg_cost": 12.04,
-   "opened_date": "2026-11-03",
-   "close": 10.42,
-   "market_value": 52.1,
-   "unrealized_pnl": -8.1,
-   "unrealized_pct": -13.455
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "TVTX",
-   "qty": 1,
-   "avg_cost": 52.87,
-   "opened_date": "2026-11-02",
-   "close": 52.04,
-   "market_value": 52.04,
-   "unrealized_pnl": -0.83,
-   "unrealized_pct": -1.57
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "TNGX",
+   "symbol": "CBLL",
    "qty": 2,
-   "avg_cost": 22.46,
+   "avg_cost": 27.77,
    "opened_date": "2026-11-03",
-   "close": 25.73,
-   "market_value": 51.46,
-   "unrealized_pnl": 6.54,
-   "unrealized_pct": 14.559
+   "close": 26.35,
+   "market_value": 52.7,
+   "unrealized_pnl": -2.84,
+   "unrealized_pct": -5.113
   },
   {
    "engine": "QUANT",
-   "symbol": "ELVN",
+   "symbol": "PLSE",
    "qty": 1,
-   "avg_cost": 45.88,
+   "avg_cost": 54.5,
    "opened_date": "2026-11-03",
-   "close": 51.19,
-   "market_value": 51.19,
-   "unrealized_pnl": 5.31,
-   "unrealized_pct": 11.574
+   "close": 52.25,
+   "market_value": 52.25,
+   "unrealized_pnl": -2.25,
+   "unrealized_pct": -4.128
   },
   {
    "engine": "QUANT",
@@ -2077,54 +2020,43 @@
    "qty": 12,
    "avg_cost": 4.785,
    "opened_date": "2026-11-03",
-   "close": 4.26,
-   "market_value": 51.12,
-   "unrealized_pnl": -6.3,
-   "unrealized_pct": -10.972
+   "close": 4.33,
+   "market_value": 51.96,
+   "unrealized_pnl": -5.46,
+   "unrealized_pct": -9.509
   },
   {
    "engine": "QUANT",
-   "symbol": "QMCO",
-   "qty": 3,
-   "avg_cost": 17.41,
-   "opened_date": "2026-11-03",
-   "close": 16.87,
-   "market_value": 50.61,
-   "unrealized_pnl": -1.62,
-   "unrealized_pct": -3.102
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ABSI",
-   "qty": 5,
-   "avg_cost": 10.65,
-   "opened_date": "2026-11-03",
-   "close": 10.12,
-   "market_value": 50.6,
-   "unrealized_pnl": -2.65,
-   "unrealized_pct": -4.977
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "SLS",
-   "qty": 6,
-   "avg_cost": 8.91,
-   "opened_date": "2026-11-03",
-   "close": 8.42,
-   "market_value": 50.52,
-   "unrealized_pnl": -2.94,
-   "unrealized_pct": -5.499
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "AMBQ",
+   "symbol": "TVTX",
    "qty": 1,
-   "avg_cost": 45.5,
+   "avg_cost": 52.87,
+   "opened_date": "2026-11-02",
+   "close": 51.56,
+   "market_value": 51.56,
+   "unrealized_pnl": -1.31,
+   "unrealized_pct": -2.478
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "FCEL",
+   "qty": 5,
+   "avg_cost": 11.32,
    "opened_date": "2026-11-03",
-   "close": 50.33,
-   "market_value": 50.33,
-   "unrealized_pnl": 4.83,
-   "unrealized_pct": 10.615
+   "close": 10.25,
+   "market_value": 51.25,
+   "unrealized_pnl": -5.35,
+   "unrealized_pct": -9.452
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "APPS",
+   "qty": 7,
+   "avg_cost": 8.65,
+   "opened_date": "2026-11-03",
+   "close": 7.3,
+   "market_value": 51.1,
+   "unrealized_pnl": -9.45,
+   "unrealized_pct": -15.607
   },
   {
    "engine": "QUANT",
@@ -2132,32 +2064,10 @@
    "qty": 1,
    "avg_cost": 53.41,
    "opened_date": "2026-11-03",
-   "close": 50.25,
-   "market_value": 50.25,
-   "unrealized_pnl": -3.16,
-   "unrealized_pct": -5.916
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "PACS",
-   "qty": 1,
-   "avg_cost": 46.34,
-   "opened_date": "2026-11-03",
-   "close": 50.06,
-   "market_value": 50.06,
-   "unrealized_pnl": 3.72,
-   "unrealized_pct": 8.028
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "UCTT",
-   "qty": 1,
-   "avg_cost": 49.64,
-   "opened_date": "2026-11-03",
-   "close": 49.63,
-   "market_value": 49.63,
-   "unrealized_pnl": -0.01,
-   "unrealized_pct": -0.02
+   "close": 50.16,
+   "market_value": 50.16,
+   "unrealized_pnl": -3.25,
+   "unrealized_pct": -6.085
   },
   {
    "engine": "QUANT",
@@ -2165,87 +2075,109 @@
    "qty": 1,
    "avg_cost": 51.5,
    "opened_date": "2026-11-03",
-   "close": 49.25,
-   "market_value": 49.25,
-   "unrealized_pnl": -2.25,
-   "unrealized_pct": -4.369
+   "close": 50.1,
+   "market_value": 50.1,
+   "unrealized_pnl": -1.4,
+   "unrealized_pct": -2.718
   },
   {
    "engine": "QUANT",
-   "symbol": "VELO",
-   "qty": 10,
-   "avg_cost": 6.15,
-   "opened_date": "2026-11-03",
-   "close": 4.9,
-   "market_value": 49.0,
-   "unrealized_pnl": -12.5,
-   "unrealized_pct": -20.325
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ANAB",
-   "qty": 1,
-   "avg_cost": 48.78,
-   "opened_date": "2026-11-03",
-   "close": 48.77,
-   "market_value": 48.77,
-   "unrealized_pnl": -0.01,
-   "unrealized_pct": -0.021
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "UMC",
+   "symbol": "QMCO",
    "qty": 3,
-   "avg_cost": 16.6167,
+   "avg_cost": 17.41,
    "opened_date": "2026-11-03",
-   "close": 16.08,
-   "market_value": 48.24,
-   "unrealized_pnl": -1.61,
-   "unrealized_pct": -3.23
+   "close": 16.63,
+   "market_value": 49.89,
+   "unrealized_pnl": -2.34,
+   "unrealized_pct": -4.48
   },
   {
    "engine": "QUANT",
-   "symbol": "BAND",
+   "symbol": "ACMR",
    "qty": 1,
-   "avg_cost": 44.62,
+   "avg_cost": 45.55,
    "opened_date": "2026-11-03",
-   "close": 48.07,
-   "market_value": 48.07,
-   "unrealized_pnl": 3.45,
-   "unrealized_pct": 7.732
+   "close": 49.88,
+   "market_value": 49.88,
+   "unrealized_pnl": 4.33,
+   "unrealized_pct": 9.506
   },
   {
    "engine": "QUANT",
-   "symbol": "EWTX",
-   "qty": 1,
-   "avg_cost": 39.97,
+   "symbol": "TNGX",
+   "qty": 2,
+   "avg_cost": 22.46,
    "opened_date": "2026-11-03",
-   "close": 47.57,
-   "market_value": 47.57,
-   "unrealized_pnl": 7.6,
-   "unrealized_pct": 19.014
+   "close": 24.85,
+   "market_value": 49.7,
+   "unrealized_pnl": 4.78,
+   "unrealized_pct": 10.641
   },
   {
    "engine": "QUANT",
-   "symbol": "LPG",
+   "symbol": "AMBQ",
    "qty": 1,
-   "avg_cost": 52.05,
+   "avg_cost": 45.5,
    "opened_date": "2026-11-03",
-   "close": 47.4,
-   "market_value": 47.4,
-   "unrealized_pnl": -4.65,
-   "unrealized_pct": -8.934
+   "close": 48.78,
+   "market_value": 48.78,
+   "unrealized_pnl": 3.28,
+   "unrealized_pct": 7.209
   },
   {
    "engine": "QUANT",
-   "symbol": "IRDM",
-   "qty": 1,
-   "avg_cost": 44.5,
+   "symbol": "IBRX",
+   "qty": 8,
+   "avg_cost": 8.26,
    "opened_date": "2026-11-03",
-   "close": 47.29,
-   "market_value": 47.29,
-   "unrealized_pnl": 2.79,
-   "unrealized_pct": 6.27
+   "close": 6.07,
+   "market_value": 48.56,
+   "unrealized_pnl": -17.52,
+   "unrealized_pct": -26.513
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ELVN",
+   "qty": 1,
+   "avg_cost": 45.88,
+   "opened_date": "2026-11-03",
+   "close": 48.31,
+   "market_value": 48.31,
+   "unrealized_pnl": 2.43,
+   "unrealized_pct": 5.296
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "SLS",
+   "qty": 6,
+   "avg_cost": 8.91,
+   "opened_date": "2026-11-03",
+   "close": 8.03,
+   "market_value": 48.18,
+   "unrealized_pnl": -5.28,
+   "unrealized_pct": -9.877
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "UCTT",
+   "qty": 1,
+   "avg_cost": 49.64,
+   "opened_date": "2026-11-03",
+   "close": 48.1,
+   "market_value": 48.1,
+   "unrealized_pnl": -1.54,
+   "unrealized_pct": -3.102
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "PACS",
+   "qty": 1,
+   "avg_cost": 46.34,
+   "opened_date": "2026-11-03",
+   "close": 48.0,
+   "market_value": 48.0,
+   "unrealized_pnl": 1.66,
+   "unrealized_pct": 3.582
   },
   {
    "engine": "QUANT",
@@ -2253,21 +2185,32 @@
    "qty": 4,
    "avg_cost": 13.98,
    "opened_date": "2026-11-03",
-   "close": 11.8,
-   "market_value": 47.2,
-   "unrealized_pnl": -8.72,
-   "unrealized_pct": -15.594
+   "close": 11.98,
+   "market_value": 47.92,
+   "unrealized_pnl": -8.0,
+   "unrealized_pct": -14.306
   },
   {
    "engine": "QUANT",
-   "symbol": "AXTI",
+   "symbol": "LPG",
    "qty": 1,
-   "avg_cost": 50.25,
+   "avg_cost": 52.05,
    "opened_date": "2026-11-03",
-   "close": 46.97,
-   "market_value": 46.97,
-   "unrealized_pnl": -3.28,
-   "unrealized_pct": -6.527
+   "close": 47.8,
+   "market_value": 47.8,
+   "unrealized_pnl": -4.25,
+   "unrealized_pct": -8.165
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ANAB",
+   "qty": 1,
+   "avg_cost": 48.78,
+   "opened_date": "2026-11-03",
+   "close": 47.77,
+   "market_value": 47.77,
+   "unrealized_pnl": -1.01,
+   "unrealized_pct": -2.071
   },
   {
    "engine": "QUANT",
@@ -2275,32 +2218,21 @@
    "qty": 1,
    "avg_cost": 48.4,
    "opened_date": "2026-11-03",
-   "close": 46.74,
-   "market_value": 46.74,
-   "unrealized_pnl": -1.66,
-   "unrealized_pct": -3.43
+   "close": 47.66,
+   "market_value": 47.66,
+   "unrealized_pnl": -0.74,
+   "unrealized_pct": -1.529
   },
   {
    "engine": "QUANT",
-   "symbol": "STM",
-   "qty": 1,
-   "avg_cost": 48.57,
+   "symbol": "UMC",
+   "qty": 3,
+   "avg_cost": 16.6167,
    "opened_date": "2026-11-03",
-   "close": 46.26,
-   "market_value": 46.26,
-   "unrealized_pnl": -2.31,
-   "unrealized_pct": -4.756
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "MAN",
-   "qty": 1,
-   "avg_cost": 46.26,
-   "opened_date": "2026-11-03",
-   "close": 46.11,
-   "market_value": 46.11,
-   "unrealized_pnl": -0.15,
-   "unrealized_pct": -0.324
+   "close": 15.76,
+   "market_value": 47.28,
+   "unrealized_pnl": -2.57,
+   "unrealized_pct": -5.156
   },
   {
    "engine": "QUANT",
@@ -2308,21 +2240,10 @@
    "qty": 1,
    "avg_cost": 49.61,
    "opened_date": "2026-11-03",
-   "close": 46.03,
-   "market_value": 46.03,
-   "unrealized_pnl": -3.58,
-   "unrealized_pct": -7.216
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "COHU",
-   "qty": 1,
-   "avg_cost": 51.01,
-   "opened_date": "2026-11-03",
-   "close": 45.975,
-   "market_value": 45.98,
-   "unrealized_pnl": -5.03,
-   "unrealized_pct": -9.871
+   "close": 47.04,
+   "market_value": 47.04,
+   "unrealized_pnl": -2.57,
+   "unrealized_pct": -5.18
   },
   {
    "engine": "QUANT",
@@ -2330,21 +2251,76 @@
    "qty": 1,
    "avg_cost": 55.28,
    "opened_date": "2026-11-02",
-   "close": 45.54,
-   "market_value": 45.54,
-   "unrealized_pnl": -9.74,
-   "unrealized_pct": -17.619
+   "close": 46.76,
+   "market_value": 46.76,
+   "unrealized_pnl": -8.52,
+   "unrealized_pct": -15.412
   },
   {
    "engine": "QUANT",
-   "symbol": "LBRX",
+   "symbol": "STM",
    "qty": 1,
-   "avg_cost": 40.74,
+   "avg_cost": 48.57,
    "opened_date": "2026-11-03",
-   "close": 44.71,
-   "market_value": 44.71,
-   "unrealized_pnl": 3.97,
-   "unrealized_pct": 9.745
+   "close": 46.46,
+   "market_value": 46.46,
+   "unrealized_pnl": -2.11,
+   "unrealized_pct": -4.344
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "BAND",
+   "qty": 1,
+   "avg_cost": 44.62,
+   "opened_date": "2026-11-03",
+   "close": 46.29,
+   "market_value": 46.29,
+   "unrealized_pnl": 1.67,
+   "unrealized_pct": 3.743
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "IRDM",
+   "qty": 1,
+   "avg_cost": 44.5,
+   "opened_date": "2026-11-03",
+   "close": 46.12,
+   "market_value": 46.12,
+   "unrealized_pnl": 1.62,
+   "unrealized_pct": 3.64
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "MAN",
+   "qty": 1,
+   "avg_cost": 46.26,
+   "opened_date": "2026-11-03",
+   "close": 46.05,
+   "market_value": 46.05,
+   "unrealized_pnl": -0.21,
+   "unrealized_pct": -0.454
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "EWTX",
+   "qty": 1,
+   "avg_cost": 39.97,
+   "opened_date": "2026-11-03",
+   "close": 45.82,
+   "market_value": 45.82,
+   "unrealized_pnl": 5.85,
+   "unrealized_pct": 14.636
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ABSI",
+   "qty": 5,
+   "avg_cost": 10.65,
+   "opened_date": "2026-11-03",
+   "close": 9.135,
+   "market_value": 45.67,
+   "unrealized_pnl": -7.58,
+   "unrealized_pct": -14.225
   },
   {
    "engine": "QUANT",
@@ -2352,10 +2328,21 @@
    "qty": 2,
    "avg_cost": 24.405,
    "opened_date": "2026-11-03",
-   "close": 22.32,
-   "market_value": 44.64,
-   "unrealized_pnl": -4.17,
-   "unrealized_pct": -8.543
+   "close": 22.77,
+   "market_value": 45.54,
+   "unrealized_pnl": -3.27,
+   "unrealized_pct": -6.699
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "COHU",
+   "qty": 1,
+   "avg_cost": 51.01,
+   "opened_date": "2026-11-03",
+   "close": 45.0,
+   "market_value": 45.0,
+   "unrealized_pnl": -6.01,
+   "unrealized_pct": -11.782
   },
   {
    "engine": "QUANT",
@@ -2363,10 +2350,43 @@
    "qty": 2,
    "avg_cost": 24.14,
    "opened_date": "2026-11-03",
-   "close": 22.05,
+   "close": 22.09,
+   "market_value": 44.18,
+   "unrealized_pnl": -4.1,
+   "unrealized_pct": -8.492
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "VELO",
+   "qty": 10,
+   "avg_cost": 6.15,
+   "opened_date": "2026-11-03",
+   "close": 4.41,
    "market_value": 44.1,
-   "unrealized_pnl": -4.18,
-   "unrealized_pct": -8.658
+   "unrealized_pnl": -17.4,
+   "unrealized_pct": -28.293
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "AXTI",
+   "qty": 1,
+   "avg_cost": 50.25,
+   "opened_date": "2026-11-03",
+   "close": 43.54,
+   "market_value": 43.54,
+   "unrealized_pnl": -6.71,
+   "unrealized_pct": -13.353
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "LBRX",
+   "qty": 1,
+   "avg_cost": 40.74,
+   "opened_date": "2026-11-03",
+   "close": 42.46,
+   "market_value": 42.46,
+   "unrealized_pnl": 1.72,
+   "unrealized_pct": 4.222
   },
   {
    "engine": "QUANT",
@@ -2374,43 +2394,10 @@
    "qty": 9,
    "avg_cost": 5.24,
    "opened_date": "2026-11-03",
-   "close": 4.72,
-   "market_value": 42.48,
-   "unrealized_pnl": -4.68,
-   "unrealized_pct": -9.924
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "ROIV",
-   "qty": 1,
-   "avg_cost": 36.53,
-   "opened_date": "2026-11-03",
-   "close": 41.85,
-   "market_value": 41.85,
-   "unrealized_pnl": 5.32,
-   "unrealized_pct": 14.563
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "PDFS",
-   "qty": 1,
-   "avg_cost": 41.62,
-   "opened_date": "2026-11-03",
-   "close": 41.79,
-   "market_value": 41.79,
-   "unrealized_pnl": 0.17,
-   "unrealized_pct": 0.408
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "VECO",
-   "qty": 1,
-   "avg_cost": 39.3,
-   "opened_date": "2026-11-03",
-   "close": 40.93,
-   "market_value": 40.93,
-   "unrealized_pnl": 1.63,
-   "unrealized_pct": 4.148
+   "close": 4.66,
+   "market_value": 41.94,
+   "unrealized_pnl": -5.22,
+   "unrealized_pct": -11.069
   },
   {
    "engine": "QUANT",
@@ -2418,10 +2405,43 @@
    "qty": 2,
    "avg_cost": 22.88,
    "opened_date": "2026-11-03",
-   "close": 20.21,
-   "market_value": 40.42,
-   "unrealized_pnl": -5.34,
-   "unrealized_pct": -11.67
+   "close": 20.33,
+   "market_value": 40.66,
+   "unrealized_pnl": -5.1,
+   "unrealized_pct": -11.145
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "PDFS",
+   "qty": 1,
+   "avg_cost": 41.62,
+   "opened_date": "2026-11-03",
+   "close": 40.64,
+   "market_value": 40.64,
+   "unrealized_pnl": -0.98,
+   "unrealized_pct": -2.355
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "VECO",
+   "qty": 1,
+   "avg_cost": 39.3,
+   "opened_date": "2026-11-03",
+   "close": 40.33,
+   "market_value": 40.33,
+   "unrealized_pnl": 1.03,
+   "unrealized_pct": 2.621
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "ROIV",
+   "qty": 1,
+   "avg_cost": 36.53,
+   "opened_date": "2026-11-03",
+   "close": 39.99,
+   "market_value": 39.99,
+   "unrealized_pnl": 3.46,
+   "unrealized_pct": 9.472
   },
   {
    "engine": "QUANT",
@@ -2429,10 +2449,10 @@
    "qty": 4,
    "avg_cost": 14.42,
    "opened_date": "2026-11-03",
-   "close": 9.48,
-   "market_value": 37.92,
-   "unrealized_pnl": -19.76,
-   "unrealized_pct": -34.258
+   "close": 9.49,
+   "market_value": 37.96,
+   "unrealized_pnl": -19.72,
+   "unrealized_pct": -34.189
   },
   {
    "engine": "QUANT",
@@ -2440,21 +2460,10 @@
    "qty": 1,
    "avg_cost": 37.0,
    "opened_date": "2026-11-03",
-   "close": 37.45,
-   "market_value": 37.45,
-   "unrealized_pnl": 0.45,
-   "unrealized_pct": 1.216
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "XRPN",
-   "qty": 4,
-   "avg_cost": 12.37,
-   "opened_date": "2026-11-03",
-   "close": 9.28,
-   "market_value": 37.12,
-   "unrealized_pnl": -12.36,
-   "unrealized_pct": -24.98
+   "close": 37.07,
+   "market_value": 37.07,
+   "unrealized_pnl": 0.07,
+   "unrealized_pct": 0.189
   },
   {
    "engine": "QUANT",
@@ -2462,10 +2471,10 @@
    "qty": 1,
    "avg_cost": 47.32,
    "opened_date": "2026-11-03",
-   "close": 35.89,
-   "market_value": 35.89,
-   "unrealized_pnl": -11.43,
-   "unrealized_pct": -24.155
+   "close": 36.45,
+   "market_value": 36.45,
+   "unrealized_pnl": -10.87,
+   "unrealized_pct": -22.971
   },
   {
    "engine": "QUANT",
@@ -2473,10 +2482,21 @@
    "qty": 1,
    "avg_cost": 40.7,
    "opened_date": "2026-11-03",
-   "close": 35.36,
-   "market_value": 35.36,
-   "unrealized_pnl": -5.34,
-   "unrealized_pct": -13.12
+   "close": 36.13,
+   "market_value": 36.13,
+   "unrealized_pnl": -4.57,
+   "unrealized_pct": -11.229
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "XRPN",
+   "qty": 4,
+   "avg_cost": 12.37,
+   "opened_date": "2026-11-03",
+   "close": 8.97,
+   "market_value": 35.88,
+   "unrealized_pnl": -13.6,
+   "unrealized_pct": -27.486
   },
   {
    "engine": "QUANT",
@@ -2484,21 +2504,10 @@
    "qty": 1,
    "avg_cost": 39.49,
    "opened_date": "2026-11-03",
-   "close": 35.12,
-   "market_value": 35.12,
-   "unrealized_pnl": -4.37,
-   "unrealized_pct": -11.066
-  },
-  {
-   "engine": "QUANT",
-   "symbol": "LIND",
-   "qty": 1,
-   "avg_cost": 36.23,
-   "opened_date": "2026-11-03",
-   "close": 34.92,
-   "market_value": 34.92,
-   "unrealized_pnl": -1.31,
-   "unrealized_pct": -3.616
+   "close": 34.78,
+   "market_value": 34.78,
+   "unrealized_pnl": -4.71,
+   "unrealized_pct": -11.927
   },
   {
    "engine": "QUANT",
@@ -2506,10 +2515,21 @@
    "qty": 2,
    "avg_cost": 21.17,
    "opened_date": "2026-11-03",
-   "close": 17.26,
-   "market_value": 34.52,
-   "unrealized_pnl": -7.82,
-   "unrealized_pct": -18.47
+   "close": 17.19,
+   "market_value": 34.38,
+   "unrealized_pnl": -7.96,
+   "unrealized_pct": -18.8
+  },
+  {
+   "engine": "QUANT",
+   "symbol": "LIND",
+   "qty": 1,
+   "avg_cost": 36.23,
+   "opened_date": "2026-11-03",
+   "close": 34.13,
+   "market_value": 34.13,
+   "unrealized_pnl": -2.1,
+   "unrealized_pct": -5.796
   },
   {
    "engine": "QUANT",
@@ -2517,10 +2537,10 @@
    "qty": 1,
    "avg_cost": 34.29,
    "opened_date": "2026-11-03",
-   "close": 34.47,
-   "market_value": 34.47,
-   "unrealized_pnl": 0.18,
-   "unrealized_pct": 0.525
+   "close": 33.0,
+   "market_value": 33.0,
+   "unrealized_pnl": -1.29,
+   "unrealized_pct": -3.762
   },
   {
    "engine": "QUANT",
@@ -2528,10 +2548,10 @@
    "qty": 2,
    "avg_cost": 26.39,
    "opened_date": "2026-11-03",
-   "close": 16.33,
-   "market_value": 32.66,
-   "unrealized_pnl": -20.12,
-   "unrealized_pct": -38.121
+   "close": 15.6,
+   "market_value": 31.2,
+   "unrealized_pnl": -21.58,
+   "unrealized_pct": -40.887
   },
   {
    "engine": "QUANT",
@@ -2539,10 +2559,10 @@
    "qty": 1,
    "avg_cost": 28.43,
    "opened_date": "2026-11-02",
-   "close": 29.01,
-   "market_value": 29.01,
-   "unrealized_pnl": 0.58,
-   "unrealized_pct": 2.04
+   "close": 29.24,
+   "market_value": 29.24,
+   "unrealized_pnl": 0.81,
+   "unrealized_pct": 2.849
   },
   {
    "engine": "QUANT",
@@ -2550,13 +2570,49 @@
    "qty": 1,
    "avg_cost": 18.54,
    "opened_date": "2026-11-02",
-   "close": 19.72,
-   "market_value": 19.72,
-   "unrealized_pnl": 1.18,
-   "unrealized_pct": 6.365
+   "close": 18.08,
+   "market_value": 18.08,
+   "unrealized_pnl": -0.46,
+   "unrealized_pct": -2.481
   }
  ],
  "trades": [
+  {
+   "id": "d09d6675dcd4",
+   "engine": "SCALPER",
+   "symbol": "BDMD",
+   "opened_utc": "2026-11-12T14:40:30.294989753Z",
+   "opened_date": "2026-11-12",
+   "qty": 10306,
+   "avg_entry": 0.1035,
+   "sold_qty": 10306,
+   "avg_exit": 0.0924,
+   "realized_pnl": -114.4,
+   "return_pct": -10.725,
+   "exit_reason": "Strategy exit",
+   "status": "CLOSED",
+   "closed_utc": "2026-11-12T14:48:58.709592417Z",
+   "closed_date": "2026-11-12",
+   "hold_seconds": 508
+  },
+  {
+   "id": "8ed641e65476",
+   "engine": "SCALPER",
+   "symbol": "NCT",
+   "opened_utc": "2026-11-12T14:38:12.04379213Z",
+   "opened_date": "2026-11-12",
+   "qty": 4896,
+   "avg_entry": 0.847,
+   "sold_qty": 4896,
+   "avg_exit": 0.7401,
+   "realized_pnl": -523.38,
+   "return_pct": -12.621,
+   "exit_reason": "Strategy exit",
+   "status": "CLOSED",
+   "closed_utc": "2026-11-12T14:51:31.351882434Z",
+   "closed_date": "2026-11-12",
+   "hold_seconds": 799
+  },
   {
    "id": "190e00677219",
    "engine": "SCALPER",
