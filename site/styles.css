@@ -1320,3 +1320,153 @@ td.empty-row {
     font-size: 0.8rem;
   }
 }
+
+/* ---- Side toolbar + one-view-at-a-time layout (Nov 18 2026) ---- */
+.app-shell {
+  display: block;
+}
+
+.side-nav {
+  position: sticky;
+  top: 68px;
+  z-index: 9;
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 10px clamp(12px, 4vw, 44px);
+  border-bottom: 1px solid var(--line);
+  background: rgba(7, 8, 7, 0.9);
+  backdrop-filter: blur(18px);
+  scrollbar-width: none;
+}
+
+.side-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.side-nav a {
+  flex: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 7px 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.side-nav a:hover,
+.side-nav a:focus-visible {
+  color: var(--text);
+  border-color: var(--line);
+}
+
+.side-nav a[aria-current="page"] {
+  color: var(--cyan);
+  border-color: rgba(57, 208, 216, 0.45);
+  background: rgba(57, 208, 216, 0.12);
+}
+
+.views-on main > section.view-off {
+  display: none !important;
+}
+
+.views-on main > section {
+  min-height: calc(100svh - 140px);
+}
+
+@media (min-width: 920px) {
+  .app-shell {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .side-nav {
+    top: 68px;
+    flex-direction: column;
+    gap: 4px;
+    height: calc(100svh - 68px);
+    overflow: auto;
+    padding: 24px 14px;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+
+  .side-nav a {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  .views-on main > section {
+    min-height: calc(100svh - 68px);
+  }
+}
+
+/* Overview: the brain first, then the accounts */
+.home-view .section-shell {
+  padding-top: clamp(28px, 4vw, 48px);
+  padding-bottom: 48px;
+}
+
+.home-title {
+  margin-bottom: 22px;
+}
+
+.home-title h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  line-height: 1;
+}
+
+.home-title .positioning {
+  margin: 10px 0 0;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+}
+
+.home-minds {
+  align-items: center;
+}
+
+.home-minds .minds-figure {
+  flex: 1 1 420px;
+  max-width: 640px;
+}
+
+.minds-side {
+  flex: 1 1 300px;
+}
+
+.minds-intro {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.home-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 28px 0 0;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(17, 22, 21, 0.7);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.home-status strong {
+  margin-left: 6px;
+  color: var(--text);
+}
+
+.home-standings-head {
+  margin-top: 40px;
+}
+
+.home-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 0;
+}
